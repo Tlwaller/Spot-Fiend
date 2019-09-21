@@ -1,0 +1,47 @@
+$colors: (
+    primary: rgb(63, 63, 63),
+    accent: rgb(255, 217, 0)
+);
+
+@function color ($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+@font-face {
+    font-family: skateandfontimport;
+    src: url('./SKATRG__.TTF');
+}
+
+.hidden-by-default {
+    // display: none;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(56, 56, 56);
+    height: 95px;
+
+    .hbgr {
+        cursor: pointer;
+        width: 50px;
+        height: 56px;
+        margin-right: 20px;
+        background-color: transparent;
+        border-color: transparent;
+    }
+
+    .title-link {
+        text-decoration: none;
+        
+        #title {
+        font-family: 'skateandfontimport';
+        text-align: center;
+        color: color(accent);
+        width: 150px;
+        font-size: 2em
+        }
+    }
+}

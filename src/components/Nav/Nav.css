@@ -1,0 +1,40 @@
+@font-face {
+  font-family: skateandfontimport;
+  src: url("./SKATRG__.TTF");
+}
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #383838;
+  height: 95px;
+}
+
+#header .hbgr {
+  cursor: pointer;
+  width: 50px;
+  height: 56px;
+  margin-right: 20px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+#header .title-link {
+  text-decoration: none;
+}
+
+#header .title-link #title {
+  font-family: 'skateandfontimport';
+  text-align: center;
+  color: #ffd900;
+  width: 150px;
+  font-size: 2em;
+}
+/*# sourceMappingURL=Nav.css.map */
