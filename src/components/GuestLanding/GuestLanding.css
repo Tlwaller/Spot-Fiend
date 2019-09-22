@@ -16,7 +16,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url(../../Spot-Fiend-Photos/IMG_2220.jpg) no-repeat center center fixed;
+  background: url(../../Spot-Fiend-Photos/IMG_2220.jpg) no-repeat center center;
   background-size: cover;
   position: static;
   height: 100vh;
