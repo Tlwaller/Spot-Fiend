@@ -1,11 +1,4 @@
-$colors: (
-    primary: rgb(63, 63, 63),
-    accent: rgb(255, 217, 0)
-);
-
-@function color ($color-name) {
-    @return map-get($colors, $color-name);
-}
+@import '../../../main.scss';
 
 @font-face {
     font-family: skateandfontimport;
@@ -13,16 +6,35 @@ $colors: (
 }
 
 .hidden-by-default {
-    // display: none;
+    display: none;
 }
 
 #header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     background-color: rgb(56, 56, 56);
     height: 95px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+    .title-link {
+            text-decoration: none;
+            
+            #title {
+                width: 300px;
+                font-family: 'skateandfontimport';
+                text-align: center;
+                color: color(accent);
+                font-size: 2em;
+            }
+        }
+
+    .menu li {
+        list-style-type: none;
+        margin-right: 2vw;
+    }
 
     .hbgr {
         cursor: pointer;
@@ -32,16 +44,70 @@ $colors: (
         background-color: transparent;
         border-color: transparent;
     }
+}
 
-    .title-link {
-        text-decoration: none;
-        
-        #title {
-        font-family: 'skateandfontimport';
-        text-align: center;
-        color: color(accent);
-        width: 150px;
-        font-size: 2em
-        }
+.nav-item, .drop-item {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item:hover, .drop-item:hover {
+    color: color(accent);
+}
+
+.drop-down, .drop-down-open, .drop-down-close {
+    flex-direction: column;
+    width: 100vw;
+    height: 100px;
+    background-color: color(primary);
+    position: fixed;
+    z-index: 0;
+    list-style-type: none;
+}
+
+.drop-down-open {
+    display: flex;
+    justify-content: space-evenly;
+    animation-name: open;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1)
+}
+
+.drop-down-close {
+    display: block;
+    animation: close .6s forwards linear;
+}
+
+@keyframes open {
+    from {
+        transform: translateY(-300px);
     }
+    to {
+        transform: translateY(-16px);
+    }
+}
+
+@keyframes close {
+    from {
+        transform: translateY(-16px);
+    }
+    to {
+        transform: translateY(-300px);
+    }
+}
+
+@media (max-width: 669px) {
+    .hbgr {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media (min-width: 670px) {
+    .menu {display: flex;}
+    .drop-down, .drop-down-close, .drop-down-open {display: none;}
 }

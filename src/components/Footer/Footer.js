@@ -5,13 +5,13 @@ import {HashRouter, Link} from 'react-router-dom';
 export default function Footer() {
     return (
         <HashRouter>
+            <h1>______________</h1>
             <Link to='/about'>
                 About
             </Link>
             <Link to='/contact'>
                 Contact
             </Link>
-            <h1>Footer</h1>
         </HashRouter>
     )
 }
