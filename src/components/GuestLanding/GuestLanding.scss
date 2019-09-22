@@ -1,0 +1,52 @@
+@import '../../../main.scss';
+
+#guest-landing { 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background: url(../../Spot-Fiend-Photos/IMG_2220.jpg) no-repeat center center fixed; 
+    background-size: cover;
+
+    position: static;
+    height: 100vh;
+
+    .heading {
+        text-align: center;
+        font-size: 2.5em;
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 50px;
+        color: white;
+    }
+
+    .buttons {
+        display: flex;
+
+        button {
+        background-color: color(primary);
+        color: color(accent);
+        border-color: color(accent);
+        border-radius: 20px;
+        height: 5vh;
+        font-size: 15px;
+        }
+    }
+}
+
+@media(max-width: 470px) {
+    .buttons {
+        flex-direction: column;
+    };
+    button {
+        width: 60vw;
+    };
+}
+
+@media(min-width: 470px) {
+    .buttons {
+        flex-direction: row;
+    };
+    button {
+        width: 30vw;
+    };
+}

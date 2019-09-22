@@ -1,3 +1,7 @@
+body {
+  padding-top: 65px;
+}
+
 @font-face {
   font-family: skateandfontimport;
   src: url("./SKATRG__.TTF");
@@ -20,8 +24,10 @@
   background-color: #383838;
   height: 95px;
   width: 100%;
-  position: relative;
-  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
 }
 
 #header .title-link {
@@ -90,9 +96,13 @@
 }
 
 .drop-down-close {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-animation: close .6s forwards linear;
           animation: close .6s forwards linear;
+  -webkit-animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+          animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 @-webkit-keyframes open {
@@ -101,8 +111,8 @@
             transform: translateY(-300px);
   }
   to {
-    -webkit-transform: translateY(-16px);
-            transform: translateY(-16px);
+    -webkit-transform: translateY(-7px);
+            transform: translateY(-7px);
   }
 }
 
@@ -112,15 +122,15 @@
             transform: translateY(-300px);
   }
   to {
-    -webkit-transform: translateY(-16px);
-            transform: translateY(-16px);
+    -webkit-transform: translateY(-7px);
+            transform: translateY(-7px);
   }
 }
 
 @-webkit-keyframes close {
   from {
-    -webkit-transform: translateY(-16px);
-            transform: translateY(-16px);
+    -webkit-transform: translateY(-7px);
+            transform: translateY(-7px);
   }
   to {
     -webkit-transform: translateY(-300px);
@@ -130,8 +140,8 @@
 
 @keyframes close {
   from {
-    -webkit-transform: translateY(-16px);
-            transform: translateY(-16px);
+    -webkit-transform: translateY(-7px);
+            transform: translateY(-7px);
   }
   to {
     -webkit-transform: translateY(-300px);

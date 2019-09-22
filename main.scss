@@ -6,3 +6,7 @@ $colors: (
 @function color ($color-name) {
     @return map-get($colors, $color-name);
 }
+
+body { 
+    padding-top: 65px; 
+}

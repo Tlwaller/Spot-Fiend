@@ -16,8 +16,10 @@
     background-color: rgb(56, 56, 56);
     height: 95px;
     width: 100%;
-    position: relative;
-    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 
     .title-link {
             text-decoration: none;
@@ -75,8 +77,10 @@
 }
 
 .drop-down-close {
-    display: block;
+    display: flex;
     animation: close .6s forwards linear;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1)
+
 }
 
 @keyframes open {
@@ -84,13 +88,13 @@
         transform: translateY(-300px);
     }
     to {
-        transform: translateY(-16px);
+        transform: translateY(-7px);
     }
 }
 
 @keyframes close {
     from {
-        transform: translateY(-16px);
+        transform: translateY(-7px);
     }
     to {
         transform: translateY(-300px);

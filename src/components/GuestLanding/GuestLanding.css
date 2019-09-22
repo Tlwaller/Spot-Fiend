@@ -1,0 +1,71 @@
+body {
+  padding-top: 65px;
+}
+
+#guest-landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url(../../Spot-Fiend-Photos/IMG_2220.jpg) no-repeat center center fixed;
+  background-size: cover;
+  position: static;
+  height: 100vh;
+}
+
+#guest-landing .heading {
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 50px;
+  color: white;
+}
+
+#guest-landing .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#guest-landing .buttons button {
+  background-color: #3f3f3f;
+  color: #ffcc00;
+  border-color: #ffcc00;
+  border-radius: 20px;
+  height: 5vh;
+  font-size: 15px;
+}
+
+@media (max-width: 470px) {
+  .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  button {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 470px) {
+  .buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  button {
+    width: 30vw;
+  }
+}
+/*# sourceMappingURL=GuestLanding.css.map */

@@ -17,7 +17,7 @@ export default class Nav extends Component{
             this.setState({menuOpenStatus: 'drop-down-close'});
         }
     }
-    
+
     render() {
         return (
             <>
