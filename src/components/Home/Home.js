@@ -17,9 +17,7 @@ export default function Home() {
         <div id='homepage'>
             <h1>Home</h1>
             <Link to='/add-spot'>
-                <button>
-                    New Spot
-                </button>
+                <button className='add-spot'>New Spot</button>
             </Link>
             <ReactMapGL
                 className='map'

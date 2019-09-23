@@ -16,9 +16,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url(../../Spot-Fiend-Photos/IMG_2221.jpg) no-repeat center center;
+  background: url(../../Spot-Fiend-Photos/IMG_2220.jpg) no-repeat center center;
   background-size: cover;
   position: static;
   height: 100vh;
+}
+
+#homepage .add-spot {
+  background-color: #3f3f3f;
+  color: #ffcc00;
+  border-color: #ffcc00;
+  border-radius: 20px;
+  height: 5vh;
+  font-size: 15px;
 }
 /*# sourceMappingURL=Home.css.map */

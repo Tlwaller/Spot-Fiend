@@ -74,7 +74,7 @@ body {
   height: 100px;
   background-color: #3f3f3f;
   position: fixed;
-  z-index: 0;
+  z-index: 1;
   list-style-type: none;
 }
 
@@ -111,8 +111,8 @@ body {
             transform: translateY(-300px);
   }
   to {
-    -webkit-transform: translateY(-7px);
-            transform: translateY(-7px);
+    -webkit-transform: translateY(11px);
+            transform: translateY(11px);
   }
 }
 
@@ -122,30 +122,30 @@ body {
             transform: translateY(-300px);
   }
   to {
-    -webkit-transform: translateY(-7px);
-            transform: translateY(-7px);
+    -webkit-transform: translateY(11px);
+            transform: translateY(11px);
   }
 }
 
 @-webkit-keyframes close {
   from {
-    -webkit-transform: translateY(-7px);
-            transform: translateY(-7px);
+    -webkit-transform: translateY(11px);
+            transform: translateY(11px);
   }
   to {
-    -webkit-transform: translateY(-300px);
-            transform: translateY(-300px);
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
   }
 }
 
 @keyframes close {
   from {
-    -webkit-transform: translateY(-7px);
-            transform: translateY(-7px);
+    -webkit-transform: translateY(11px);
+            transform: translateY(11px);
   }
   to {
-    -webkit-transform: translateY(-300px);
-            transform: translateY(-300px);
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
   }
 }
 

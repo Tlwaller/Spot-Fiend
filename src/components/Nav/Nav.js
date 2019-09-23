@@ -23,14 +23,14 @@ export default class Nav extends Component{
             <>
                 <nav id='header'>
                     <HashRouter>
-                        <Link className='title-link' to='/'>
+                        <Link className='title-link' to='/home'>
                             <h1 id='title'>SPOT FIEND</h1>
                         </Link>
                         <ul className='menu'>
-                            <li><Link to='/' className='nav-item'>HOME</Link></li>
+                            <li><Link to='/home' className='nav-item'>HOME</Link></li>
                             <li><Link to='/my-spots' className='nav-item'>MY SPOTS</Link></li>
                             <li><Link to='/add-spot' className='nav-item'>NEW SPOT</Link></li>
-                            <li><Link to='/guest-landing' className='nav-item'>LOG OUT</Link></li>
+                            <li><Link to='/' className='nav-item'>LOG OUT</Link></li>
                         </ul>
                     </HashRouter>
                     
@@ -42,10 +42,10 @@ export default class Nav extends Component{
 
                     <HashRouter>
                         <ul className={`hidden-by-default ${this.state.menuOpenStatus}`}>
-                                <li><Link to='/' className='drop-item'>HOME</Link></li>
+                                <li><Link to='/home' className='drop-item'>HOME</Link></li>
                                 <li><Link to='/my-spots' className='drop-item'>MY SPOTS</Link></li>
                                 <li><Link to='/add-spot' className='drop-item'>NEW SPOT</Link></li>
-                                <li><Link to='/guest-landing' className='drop-item'>LOG OUT</Link></li>
+                                <li><Link to='/' className='drop-item'>LOG OUT</Link></li>
                         </ul>
                     </HashRouter>
             </>

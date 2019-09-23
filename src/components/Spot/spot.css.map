@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACoCA,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,IAAI;CACpB;;ADpCD,AAAA,UAAU,CAAC;EACP,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,UAAU;EAC3B,WAAW,EAAE,MAAM;EACnB,cAAc,EAAE,MAAM;EACtB,UAAU,EAAE,yCAAyC,CAAC,SAAS,CAAC,MAAM,CAAC,MAAM;EAC7E,eAAe,EAAE,KAAK;EAEtB,QAAQ,EAAE,MAAM;EAChB,MAAM,EAAE,KAAK;CAChB",
+    "sources": [
+        "spot.scss",
+        "../../../main.scss"
+    ],
+    "names": [],
+    "file": "spot.css"
+}

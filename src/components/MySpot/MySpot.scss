@@ -1,12 +1,11 @@
 @import '../../../main.scss';
 
-#about {
-    padding-top: 50px;
+#my-spot {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    background-color: color(primary);
+    background: 17% url(../../Spot-Fiend-Photos/p2_1.jpg) ;
     background-size: cover;
-    height: 170px;
+    height: 100vh;
 }

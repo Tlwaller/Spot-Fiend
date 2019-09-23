@@ -23,7 +23,7 @@
         display: flex;
         align-content: space-between;
         button {
-        @include button;
+        @include big-button;
         }
     }
 }

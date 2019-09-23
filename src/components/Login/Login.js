@@ -14,7 +14,7 @@ export default function Login() {
             <input className='login-input'
             type='text' 
             placeholder='Email'/>
-            <Link to='/'>
+            <Link to='/home'>
                 <input type='Log in' value='Log-In' className='login-input'/>
             </Link>
         </form>

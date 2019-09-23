@@ -63,7 +63,7 @@
     height: 100px;
     background-color: color(primary);
     position: fixed;
-    z-index: 0;
+    z-index: 1;
     list-style-type: none;
 }
 
@@ -88,16 +88,16 @@
         transform: translateY(-300px);
     }
     to {
-        transform: translateY(-7px);
+        transform: translateY(11px);
     }
 }
 
 @keyframes close {
     from {
-        transform: translateY(-7px);
+        transform: translateY(11px);
     }
     to {
-        transform: translateY(-300px);
+        transform: translateY(-100px);
     }
 }
 

@@ -15,8 +15,8 @@ import MySpotList from './components/MySpotList/MySpotList';
 export default (
     <Router>
         <Switch>
-            <Route exact path='/' component={Home}/>
-            <Route path='/guest-landing' component={GuestLanding}/>
+            <Route exact path='/' component={GuestLanding}/>
+            <Route path='/home' component={Home}/>
             <Route path='/login' component={Login}/>
             <Route path='/register' component={Register}/>
             <Route path='/add-spot' component={AddSpot}/>

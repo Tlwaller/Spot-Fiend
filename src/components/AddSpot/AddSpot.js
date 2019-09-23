@@ -4,12 +4,10 @@ import {Link} from 'react-router-dom';
 
 export default function AddSpot() {
     return (
-        <div>
+        <div id='post-spot-page'>
             <h1>AddSpot</h1>
             <Link to='/my-spot'>
-                <button>
-                    Submit
-                </button>
+                <button className='submit-btn'>Submit</button>
             </Link>
         </div>
     )

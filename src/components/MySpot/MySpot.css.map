@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACoCA,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,IAAI;CACpB;;ADpCD,AAAA,QAAQ,CAAC;EACL,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,UAAU;EAC3B,WAAW,EAAE,MAAM;EACnB,cAAc,EAAE,MAAM;EACtB,UAAU,EAAE,GAAG,CAAC,qCAAqC;EACrD,eAAe,EAAE,KAAK;EACtB,MAAM,EAAE,KAAK;CAChB",
+    "sources": [
+        "MySpot.scss",
+        "../../../main.scss"
+    ],
+    "names": [],
+    "file": "MySpot.css"
+}

@@ -1,0 +1,23 @@
+body {
+  padding-top: 65px;
+}
+
+#my-spot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: 17% url(../../Spot-Fiend-Photos/p2_1.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+/*# sourceMappingURL=MySpot.css.map */

@@ -1,0 +1,24 @@
+body {
+  padding-top: 65px;
+}
+
+#spot-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url(../../Spot-Fiend-Photos/IMG_2221.jpg) no-repeat center center;
+  background-size: cover;
+  position: static;
+  height: 100vh;
+}
+/*# sourceMappingURL=spot.css.map */

@@ -3,7 +3,7 @@ import './Spot.css';
 
 export default function Spot() {
     return (
-        <div>
+        <div id='spot-page'>
             <h1>Spot</h1>
         </div>
     )

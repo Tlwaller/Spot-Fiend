@@ -7,7 +7,7 @@ $colors: (
     @return map-get($colors, $color-name);
 }
 
-@mixin button {
+@mixin big-button {
     background-color: color(primary);
     color: color(accent);
     border-color: color(accent);
@@ -15,6 +15,16 @@ $colors: (
     height: 5vh;
     font-size: 15px;
     }
+
+    @mixin smol-button {
+        background-color: color(primary);
+        color: color(accent);
+        border-color: color(accent);
+        border-radius: 15px;
+        height: 3vh;
+        width: 20vw;
+        font-size: 15px;
+        }
 
 %input-field {
     background-color: color(primary);

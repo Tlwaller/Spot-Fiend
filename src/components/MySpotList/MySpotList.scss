@@ -1,0 +1,11 @@
+@import '../../../main.scss';
+
+#my-spots {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background: 17% url(../../Spot-Fiend-Photos/p2_1.jpg) ;
+    background-size: cover;
+    height: 100vh;
+}
