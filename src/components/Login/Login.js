@@ -4,13 +4,19 @@ import {Link} from 'react-router-dom';
 
 export default function Login() {
     return (
-        <div>
-            <h1>Login</h1>
+        <form id='login-form'>
+            <input className='login-input'
+            type='text' 
+            placeholder='Username'/>
+            <input className='login-input'
+            type='text' 
+            placeholder='Password'/>
+            <input className='login-input'
+            type='text' 
+            placeholder='Email'/>
             <Link to='/'>
-                <button>
-                    Log In
-                </button>
+                <input type='Log in' value='Log-In' className='login-input'/>
             </Link>
-        </div>
+        </form>
     )
 }

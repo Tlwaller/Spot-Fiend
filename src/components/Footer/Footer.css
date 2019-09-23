@@ -1,0 +1,22 @@
+body {
+  padding-top: 65px;
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-item {
+  color: white;
+}
+
+.footer-item:hover {
+  color: #ffcc00;
+}
+/*# sourceMappingURL=Footer.css.map */

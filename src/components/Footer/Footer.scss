@@ -1,0 +1,14 @@
+@import '../../../main.scss';
+
+#footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item {
+    color: white;
+}
+
+.footer-item:hover {
+    color: color(accent);
+}

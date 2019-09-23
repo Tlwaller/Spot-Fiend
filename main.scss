@@ -7,6 +7,23 @@ $colors: (
     @return map-get($colors, $color-name);
 }
 
+@mixin button {
+    background-color: color(primary);
+    color: color(accent);
+    border-color: color(accent);
+    border-radius: 20px;
+    height: 5vh;
+    font-size: 15px;
+    }
+
+%input-field {
+    background-color: color(primary);
+    color: color(accent);
+    border-color: color(accent);
+    border-radius: 20px;
+    text-align: center;
+}
+
 body { 
     padding-top: 65px; 
 }

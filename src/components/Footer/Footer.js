@@ -1,17 +1,18 @@
 import React from 'react';
-import './Footer.css';
+import './Footer.css'
 import {HashRouter, Link} from 'react-router-dom';
 
 export default function Footer() {
     return (
+        <div id='footer'>
         <HashRouter>
-            <h1>______________</h1>
             <Link to='/about'>
-                About
+                <h3 className='footer-item'>About</h3>
             </Link>
             <Link to='/contact'>
-                Contact
+                <h3 className='footer-item'>Contact</h3>
             </Link>
         </HashRouter>
+        </div>
     )
 }

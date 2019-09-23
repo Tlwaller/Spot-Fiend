@@ -5,7 +5,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    background: url(../../Spot-Fiend-Photos/IMG_2220.jpg) no-repeat center center ; 
+    background: url(../../Spot-Fiend-Photos/IMG_2221.jpg) no-repeat center center; 
     background-size: cover;
 
     position: static;
@@ -21,14 +21,9 @@
 
     .buttons {
         display: flex;
-
+        align-content: space-between;
         button {
-        background-color: color(primary);
-        color: color(accent);
-        border-color: color(accent);
-        border-radius: 20px;
-        height: 5vh;
-        font-size: 15px;
+        @include button;
         }
     }
 }

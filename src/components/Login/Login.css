@@ -1,0 +1,60 @@
+#login-form .login-input {
+  background-color: #3f3f3f;
+  color: #ffcc00;
+  border-color: #ffcc00;
+  border-radius: 20px;
+  text-align: center;
+}
+
+body {
+  padding-top: 65px;
+}
+
+#login-form {
+  padding-top: 105px;
+  padding-bottom: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(../../Spot-Fiend-Photos/Adjustments.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#login-form #lt {
+  color: white;
+}
+
+#login-form #login-btn {
+  background-color: #3f3f3f;
+  color: #ffcc00;
+  border-color: #ffcc00;
+  border-radius: 20px;
+  height: 5vh;
+  font-size: 15px;
+}
+
+#login-form .login-input {
+  margin-top: 5px;
+  height: 30px;
+  font-size: 15px;
+}
+
+@media (max-width: 670px) {
+  .login-input {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 670px) {
+  .login-input {
+    width: 30vw;
+  }
+}
+/*# sourceMappingURL=Login.css.map */

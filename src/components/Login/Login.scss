@@ -1,0 +1,39 @@
+@import '../../../main.scss';
+
+
+#login-form {
+    padding-top: 105px;
+    padding-bottom: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../../Spot-Fiend-Photos/Adjustments.jpg) no-repeat center center; 
+    background-size: cover;
+
+    #lt {
+    color: white;
+    }
+
+    #login-btn {
+        @include button;
+    }
+
+    .login-input {
+        @extend %input-field;
+        margin-top: 5px;
+        height: 30px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 670px) {
+    .login-input {
+        width: 60vw;
+    };
+}
+
+@media(min-width: 670px) {
+    .login-input {
+        width: 30vw;
+    };
+}

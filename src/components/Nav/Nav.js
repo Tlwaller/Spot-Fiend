@@ -26,7 +26,6 @@ export default class Nav extends Component{
                         <Link className='title-link' to='/'>
                             <h1 id='title'>SPOT FIEND</h1>
                         </Link>
-                    
                         <ul className='menu'>
                             <li><Link to='/' className='nav-item'>HOME</Link></li>
                             <li><Link to='/my-spots' className='nav-item'>MY SPOTS</Link></li>
@@ -49,7 +48,6 @@ export default class Nav extends Component{
                                 <li><Link to='/guest-landing' className='drop-item'>LOG OUT</Link></li>
                         </ul>
                     </HashRouter>
-                
             </>
         )
     }
