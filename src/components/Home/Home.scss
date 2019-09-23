@@ -1,0 +1,13 @@
+@import '../../../main.scss';
+
+#homepage {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background: url(../../Spot-Fiend-Photos/IMG_2221.jpg) no-repeat center center; 
+    background-size: cover;
+
+    position: static;
+    height: 100vh;
+}
