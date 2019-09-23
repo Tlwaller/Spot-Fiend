@@ -1,0 +1,1 @@
+SELECT user_id, title, address, description FROM spots;
