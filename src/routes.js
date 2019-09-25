@@ -10,6 +10,7 @@ import Spot from './components/Spot/Spot';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import MySpotList from './components/MySpotList/MySpotList';
+// import Test from './components/Test/Test';
 
 
 export default (
@@ -25,6 +26,7 @@ export default (
             <Route path='/about' component={About}/>
             <Route path='/contact' component={Contact}/>
             <Route path='/my-spots' component={MySpotList}/>
+            {/* <Route path='/test' component={Test}/> */}
         </Switch>
     </Router>
 )

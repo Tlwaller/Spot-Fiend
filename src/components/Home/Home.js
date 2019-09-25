@@ -1,8 +1,8 @@
-
 import React, {useState} from 'react';
 import './Home.css';
 import {Link} from 'react-router-dom';
 import SpotList from '../SpotList/SpotList';
+import Nav from '../Nav/Nav';
 import ReactMapGL from 'react-map-gl';
 require('dotenv').config();
 
@@ -17,6 +17,7 @@ export default function Home() {
 
     return (
         <div id='homepage'>
+            <Nav/>
             <h1>Home</h1>
             <Link to='/add-spot'>
                 <button className='add-spot'>New Spot</button>
