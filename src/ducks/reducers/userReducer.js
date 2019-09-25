@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const initialState = {
-    userId: null,
+    userId: 0,
     username: ''
 };
 
@@ -27,7 +27,7 @@ export function registerUser(newUser) {
 export function loginUser(user) {
     return {
         type: LOGIN_USER,
-        payload: axios.post('/auth/login')
+        payload: axios.post('/auth/login', user)
     }
 };
 
@@ -57,6 +57,7 @@ export default function reducer(state = initialState, action) {
             };
 
         case `${LOGIN_USER}_FULFILLED`:
+            console.log(payload.data.id);
             return {
                 ...state,
                 userId: payload.data.id,
@@ -65,8 +66,8 @@ export default function reducer(state = initialState, action) {
 
         case LOGOUT_USER:
             return {
-                userId: null,
-                username: null
+                id: 0,
+                username: ''
             };
         
         default: return state;

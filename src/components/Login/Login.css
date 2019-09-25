@@ -10,6 +10,20 @@ body {
   padding-top: 65px;
 }
 
+.back-btn {
+  background-color: #3f3f3f;
+  color: #ffcc00;
+  border-color: #ffcc00;
+  border-radius: 15px;
+  height: 3vh;
+  width: 20vw;
+  font-size: 15px;
+  width: 70px;
+  position: absolute;
+  top: 70px;
+  left: 10px;
+}
+
 #login-form {
   padding-top: 105px;
   padding-bottom: 50vh;
@@ -25,19 +39,6 @@ body {
           align-items: center;
   background: url(../../Spot-Fiend-Photos/Adjustments.jpg) no-repeat center center;
   background-size: cover;
-}
-
-#login-form #lt {
-  color: white;
-}
-
-#login-form #login-btn {
-  background-color: #3f3f3f;
-  color: #ffcc00;
-  border-color: #ffcc00;
-  border-radius: 20px;
-  height: 5vh;
-  font-size: 15px;
 }
 
 #login-form .login-input {

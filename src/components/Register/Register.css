@@ -1,0 +1,61 @@
+#register-form .register-input {
+  background-color: #3f3f3f;
+  color: #ffcc00;
+  border-color: #ffcc00;
+  border-radius: 20px;
+  text-align: center;
+}
+
+body {
+  padding-top: 65px;
+}
+
+.back-btn {
+  background-color: #3f3f3f;
+  color: #ffcc00;
+  border-color: #ffcc00;
+  border-radius: 15px;
+  height: 3vh;
+  width: 20vw;
+  font-size: 15px;
+  width: 70px;
+  position: absolute;
+  top: 70px;
+  left: 10px;
+}
+
+#register-form {
+  padding-top: 105px;
+  padding-bottom: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(../../Spot-Fiend-Photos/Adjustments.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#register-form .register-input {
+  margin-top: 5px;
+  height: 30px;
+  font-size: 15px;
+}
+
+@media (max-width: 670px) {
+  .register-input {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 670px) {
+  .register-input {
+    width: 30vw;
+  }
+}
+/*# sourceMappingURL=Register.css.map */

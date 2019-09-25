@@ -23,7 +23,7 @@ module.exports = {
             const newUser = await db.auth.registerUser(username, hash, is_admin);
 
             req.session.user = {
-                user_id: newUser[0].id,
+                id: newUser[0].id,
                 username: newUser[0].username,
             }
 
@@ -47,7 +47,7 @@ module.exports = {
                 return res.status(403).json("Username/password incorrect.");
             } else {
                 req.session.user = {
-                    user_id: foundUser[0].id,
+                    id: foundUser[0].id,
                     username: foundUser[0].username
                 }
                 res.status(200).json(req.session.user)

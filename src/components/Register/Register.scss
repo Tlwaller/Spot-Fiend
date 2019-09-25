@@ -1,6 +1,6 @@
 @import '../../../main.scss';
 
-#login-form {
+#register-form {
     padding-top: 105px;
     padding-bottom: 50vh;
     display: flex;
@@ -9,7 +9,7 @@
     background: url(../../Spot-Fiend-Photos/Adjustments.jpg) no-repeat center center; 
     background-size: cover;
 
-    .login-input {
+    .register-input {
         @extend %input-field;
         margin-top: 5px;
         height: 30px;
@@ -18,13 +18,13 @@
 }
 
 @media(max-width: 670px) {
-    .login-input {
+    .register-input {
         width: 60vw;
     };
 }
 
 @media(min-width: 670px) {
-    .login-input {
+    .register-input {
         width: 30vw;
     };
 }

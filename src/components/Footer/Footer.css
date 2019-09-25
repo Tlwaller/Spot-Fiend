@@ -19,4 +19,9 @@ body {
 .footer-item:hover {
   color: #ffcc00;
 }
+
+#small-txt {
+  text-align: center;
+  font-size: 10px;
+}
 /*# sourceMappingURL=Footer.css.map */

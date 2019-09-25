@@ -13,6 +13,7 @@ export default function Footer() {
                 <h3 className='footer-item'>Contact</h3>
             </Link>
         </HashRouter>
+        <span id='small-txt'>In Loving Memory Of Mimi</span>
         </div>
     )
 }

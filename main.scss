@@ -37,3 +37,11 @@ $colors: (
 body { 
     padding-top: 65px; 
 }
+
+.back-btn {
+    @include smol-button;
+    width: 70px;
+    position: absolute;
+    top: 70px;
+    left: 10px;
+}

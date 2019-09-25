@@ -1,13 +1,26 @@
 import React, {Component} from 'react';
 import './Nav.css';
 import {HashRouter, Link} from 'react-router-dom';
+import {connect} from 'react-redux';
+import {getSession, logoutUser} from '../../ducks/reducers/userReducer';
+import {withRouter} from 'react-router-dom';
 
-export default class Nav extends Component{
+class Nav extends Component{
     constructor() {
         super();
         this.state = {
             menuOpenStatus: 'drop-down'
         }
+    }
+
+    componentDidMount() {
+        this.props.getSession();
+    }
+
+    handleLogout = () => {
+        this.props.logoutUser();
+        this.props.history.push('/');
+        window.location.reload();
     }
 
     toggle = () => {
@@ -30,7 +43,7 @@ export default class Nav extends Component{
                             <li><Link to='/home' className='nav-item'>HOME</Link></li>
                             <li><Link to='/my-spots' className='nav-item'>MY SPOTS</Link></li>
                             <li><Link to='/add-spot' className='nav-item'>NEW SPOT</Link></li>
-                            <li><Link to='/' className='nav-item'>LOG OUT</Link></li>
+                            <li onClick={this.handleLogout}>LOGOUT</li>
                         </ul>
                     </HashRouter>
                     
@@ -45,10 +58,23 @@ export default class Nav extends Component{
                                 <li><Link to='/home' className='drop-item'>HOME</Link></li>
                                 <li><Link to='/my-spots' className='drop-item'>MY SPOTS</Link></li>
                                 <li><Link to='/add-spot' className='drop-item'>NEW SPOT</Link></li>
-                                <li><Link to='/' className='drop-item'>LOG OUT</Link></li>
+                                <li onClick={this.handleLogout}>LOGOUT</li>
                         </ul>
                     </HashRouter>
             </>
         )
     }
 }
+
+const mapStateToProps = reduxState => {
+    return {
+        username: reduxState.userReducer.username
+    }
+}
+
+export default withRouter(connect(mapStateToProps,
+    {
+        logoutUser,
+        getSession
+    }
+    )(Nav));
