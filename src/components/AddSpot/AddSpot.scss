@@ -13,3 +13,19 @@
         @include big-button;
     }
 }
+
+//background
+@media(min-width: 650px) {
+    #post-spot-page {
+        background: url(../../Spot-Fiend-Photos/street-city-urban-bw-Canada-Vancouver-946974-wallhere.com.jpg)no-repeat center center;
+        background-size: cover;
+        background-position-x:60%;
+    }
+}
+
+@media(max-width: 650px) {
+    #post-spot-page {
+        background: url(../../Spot-Fiend-Photos/mobile-air.jpg) no-repeat center center;
+        background-size: cover;
+    }
+}

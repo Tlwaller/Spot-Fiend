@@ -2,6 +2,20 @@ body {
   padding-top: 65px;
 }
 
+.back-btn {
+  background-color: #3f3f3f;
+  color: #ffcc00;
+  border-color: #ffcc00;
+  border-radius: 15px;
+  height: 3vh;
+  width: 20vw;
+  font-size: 15px;
+  width: 70px;
+  position: absolute;
+  top: 70px;
+  left: 10px;
+}
+
 #my-spots {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,5 +33,19 @@ body {
   background: 17% url(../../Spot-Fiend-Photos/p2_1.jpg);
   background-size: cover;
   height: 100vh;
+}
+
+@media (min-width: 1050px) {
+  #my-spots {
+    background: url(../../Spot-Fiend-Photos/Eric-Koston.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1050px) {
+  #my-spots {
+    background: url(../../Spot-Fiend-Photos/01mag-jones-02-master1050-v4.jpg) no-repeat center center;
+    background-size: cover;
+  }
 }
 /*# sourceMappingURL=MySpotList.css.map */

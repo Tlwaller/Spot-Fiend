@@ -2,6 +2,20 @@ body {
   padding-top: 65px;
 }
 
+.back-btn {
+  background-color: #3f3f3f;
+  color: #ffcc00;
+  border-color: #ffcc00;
+  border-radius: 15px;
+  height: 3vh;
+  width: 20vw;
+  font-size: 15px;
+  width: 70px;
+  position: absolute;
+  top: 70px;
+  left: 10px;
+}
+
 #homepage {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,7 +30,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url(../../Spot-Fiend-Photos/IMG_2220.jpg) no-repeat center center;
+  background: url(../../Spot-Fiend-Photos/p2_1.jpg) no-repeat center center;
   background-size: cover;
   position: static;
   height: 100vh;
@@ -29,5 +43,19 @@ body {
   border-radius: 20px;
   height: 5vh;
   font-size: 15px;
+}
+
+@media (min-width: 1050px) {
+  #homepage {
+    background: url(../../Spot-Fiend-Photos/Matt-Berger-Rhino.jpg);
+    background-position-x: 50%;
+  }
+}
+
+@media (max-width: 1050px) {
+  #homepage {
+    background: url(../../Spot-Fiend-Photos/mobile-freeway.jpg) no-repeat center center;
+    background-size: cover;
+  }
 }
 /*# sourceMappingURL=Home.css.map */

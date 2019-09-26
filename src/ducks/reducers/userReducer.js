@@ -20,7 +20,7 @@ export function getSession() {
 export function registerUser(newUser) {
     return {
         type: REGISTER_USER,
-        payload: axios.post('/auth/register')
+        payload: axios.post('/auth/register', newUser)
     }
 };
 

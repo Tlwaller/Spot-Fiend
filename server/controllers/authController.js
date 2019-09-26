@@ -10,7 +10,7 @@ module.exports = {
     },
 
     register: async (req, res) => {
-        const {username, password, is_admin} = req.body;
+        const {username, password, email, is_admin} = req.body;
         const db = req.app.get('db');
 
         const foundUser = await db.auth.checkForUsername(username);

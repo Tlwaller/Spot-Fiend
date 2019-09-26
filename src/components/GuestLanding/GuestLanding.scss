@@ -5,8 +5,6 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    background: url(../../Spot-Fiend-Photos/IMG_2221.jpg) no-repeat center center; 
-    background-size: cover;
 
     position: static;
     height: 100vh;
@@ -28,6 +26,8 @@
     }
 }
 
+
+//button size
 @media(max-width: 470px) {
     .buttons {
         flex-direction: column;
@@ -44,4 +44,18 @@
     button {
         width: 30vw;
     };
+}
+
+//background
+@media(min-width: 1050px) {
+    #guest-landing {
+        background: url(../../Spot-Fiend-Photos/wallpaper_skb1012_02.jpg) no-repeat center center;
+    }
+}
+
+@media(max-width: 1050px) {
+    #guest-landing {
+        background: url(../../Spot-Fiend-Photos/mobile-red.jpg) no-repeat center center;
+        background-size: cover;
+    }
 }

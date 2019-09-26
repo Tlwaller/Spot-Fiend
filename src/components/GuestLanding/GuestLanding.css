@@ -2,6 +2,20 @@ body {
   padding-top: 65px;
 }
 
+.back-btn {
+  background-color: #3f3f3f;
+  color: #ffcc00;
+  border-color: #ffcc00;
+  border-radius: 15px;
+  height: 3vh;
+  width: 20vw;
+  font-size: 15px;
+  width: 70px;
+  position: absolute;
+  top: 70px;
+  left: 10px;
+}
+
 #guest-landing {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,8 +30,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url(../../Spot-Fiend-Photos/IMG_2221.jpg) no-repeat center center;
-  background-size: cover;
   position: static;
   height: 100vh;
 }
@@ -68,6 +80,19 @@ body {
   }
   button {
     width: 30vw;
+  }
+}
+
+@media (min-width: 1050px) {
+  #guest-landing {
+    background: url(../../Spot-Fiend-Photos/wallpaper_skb1012_02.jpg) no-repeat center center;
+  }
+}
+
+@media (max-width: 1050px) {
+  #guest-landing {
+    background: url(../../Spot-Fiend-Photos/mobile-red.jpg) no-repeat center center;
+    background-size: cover;
   }
 }
 /*# sourceMappingURL=GuestLanding.css.map */

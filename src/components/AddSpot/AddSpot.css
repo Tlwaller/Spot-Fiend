@@ -2,6 +2,20 @@ body {
   padding-top: 65px;
 }
 
+.back-btn {
+  background-color: #3f3f3f;
+  color: #ffcc00;
+  border-color: #ffcc00;
+  border-radius: 15px;
+  height: 3vh;
+  width: 20vw;
+  font-size: 15px;
+  width: 70px;
+  position: absolute;
+  top: 70px;
+  left: 10px;
+}
+
 #post-spot-page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,5 +42,20 @@ body {
   border-radius: 20px;
   height: 5vh;
   font-size: 15px;
+}
+
+@media (min-width: 650px) {
+  #post-spot-page {
+    background: url(../../Spot-Fiend-Photos/street-city-urban-bw-Canada-Vancouver-946974-wallhere.com.jpg) no-repeat center center;
+    background-size: cover;
+    background-position-x: 60%;
+  }
+}
+
+@media (max-width: 650px) {
+  #post-spot-page {
+    background: url(../../Spot-Fiend-Photos/mobile-air.jpg) no-repeat center center;
+    background-size: cover;
+  }
 }
 /*# sourceMappingURL=AddSpot.css.map */

@@ -37,8 +37,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(../../Spot-Fiend-Photos/Adjustments.jpg) no-repeat center center;
-  background-size: cover;
+  color: black;
 }
 
 #login-form .login-input {
@@ -56,6 +55,20 @@ body {
 @media (min-width: 670px) {
   .login-input {
     width: 30vw;
+  }
+}
+
+@media (min-width: 1050px) {
+  #login-form {
+    background: url(../../Spot-Fiend-Photos/p2_1.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1050px) {
+  #login-form {
+    background: url(../../Spot-Fiend-Photos/mobile-b&w.jpg) no-repeat center center;
+    background-size: 100vh;
   }
 }
 /*# sourceMappingURL=Login.css.map */

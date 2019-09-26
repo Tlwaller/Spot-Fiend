@@ -9,3 +9,18 @@
     background-size: cover;
     height: 100vh;
 }
+
+//background
+@media(min-width: 1050px) {
+    #my-spots {
+        background: url(../../Spot-Fiend-Photos/Eric-Koston.jpg) no-repeat center center;
+        background-size: cover;
+    }
+}
+
+@media(max-width: 1050px) {
+    #my-spots {
+        background: url(../../Spot-Fiend-Photos/01mag-jones-02-master1050-v4.jpg) no-repeat center center;
+        background-size: cover;
+    }
+}

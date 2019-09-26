@@ -37,8 +37,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(../../Spot-Fiend-Photos/Adjustments.jpg) no-repeat center center;
-  background-size: cover;
 }
 
 #register-form .register-input {
@@ -56,6 +54,20 @@ body {
 @media (min-width: 670px) {
   .register-input {
     width: 30vw;
+  }
+}
+
+@media (min-width: 500px) {
+  #register-form {
+    background: url(../../Spot-Fiend-Photos/Matt-Berger-Rhino.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 500px) {
+  #register-form {
+    background: url(../../Spot-Fiend-Photos/mobile-b&w2.jpg) no-repeat center center;
+    background-size: cover;
   }
 }
 /*# sourceMappingURL=Register.css.map */

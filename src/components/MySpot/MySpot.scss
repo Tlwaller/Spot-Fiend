@@ -5,7 +5,21 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    background: 17% url(../../Spot-Fiend-Photos/p2_1.jpg) ;
-    background-size: cover;
     height: 100vh;
+}
+
+//background
+@media(min-width: 1050px) {
+    #my-spot {
+        background: url(../../Spot-Fiend-Photos/Hondar.jpg)no-repeat center center;
+        background-size: cover;
+        background-position-x:60%;
+    }
+}
+
+@media(max-width: 1050px) {
+    #my-spot {
+        background: url(../../Spot-Fiend-Photos/Billy.jpg) no-repeat center center;
+        background-size: cover;
+    }
 }

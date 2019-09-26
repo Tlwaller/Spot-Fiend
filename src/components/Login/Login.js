@@ -10,8 +10,7 @@ class Login extends Component {
         super();
         this.state = {
             username: '',
-            password: '',
-            redirect: false
+            password: ''
         };
     };
 
@@ -20,9 +19,7 @@ class Login extends Component {
         const {username, password} = this.state;
         const {loginUser} = this.props;
 
-        loginUser({username, password}).then(
-            this.setState({redirect: true})
-        )
+        loginUser({username, password})
     };
 
     handleInput = e => {

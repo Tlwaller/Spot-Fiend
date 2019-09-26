@@ -5,7 +5,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    background: url(../../Spot-Fiend-Photos/IMG_2220.jpg) no-repeat center center; 
+    background: url(../../Spot-Fiend-Photos/p2_1.jpg) no-repeat center center; 
     background-size: cover;
 
     position: static;
@@ -13,6 +13,20 @@
 
     .add-spot {
         @include big-button;
-        
+    }
+}
+
+//background
+@media(min-width: 1050px) {
+    #homepage {
+        background: url(../../Spot-Fiend-Photos/Matt-Berger-Rhino.jpg);
+        background-position-x: 50%;
+    }
+}
+
+@media(max-width: 1050px) {
+    #homepage {
+        background: url(../../Spot-Fiend-Photos/mobile-freeway.jpg) no-repeat center center;
+        background-size: cover;
     }
 }

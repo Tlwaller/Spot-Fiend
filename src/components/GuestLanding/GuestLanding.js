@@ -7,8 +7,8 @@ export default function GuestLanding() {
     const [viewport, setViewPort] = useState({
         latitude: 45,
         longitude: -75,
-        width: '70vw',
-        height: '50vh',
+        width: '40vw',
+        height: '40vh',
         zoom: 0
     });
 
