@@ -1,26 +1,13 @@
 import React, {Component} from 'react';
-import './Nav.css';
+import './GuestNav.css';
 import {HashRouter, Link} from 'react-router-dom';
-import {connect} from 'react-redux';
-import {getSession, logoutUser} from '../../ducks/reducers/userReducer';
-import {withRouter} from 'react-router-dom';
 
-class Nav extends Component{
+export default class Nav extends Component{
     constructor() {
         super();
         this.state = {
             menuOpenStatus: 'drop-down'
         }
-    }
-
-    componentDidMount() {
-        this.props.getSession();
-    }
-
-    handleLogout = () => {
-        this.props.logoutUser();
-        this.props.history.push('/');
-        window.location.reload();
     }
 
     toggle = () => {
@@ -34,16 +21,14 @@ class Nav extends Component{
     render() {
         return (
             <>
-                <nav id='header'>
+                <nav id='guest-nav'>
                     <HashRouter>
-                        <Link className='title-link' to='/home'>
+                        <Link className='title-link' to='/'>
                             <h1 id='title'>SPOT FIEND</h1>
                         </Link>
                         <ul className='menu'>
-                            <li><Link to='/home' className='nav-item'>HOME</Link></li>
-                            <li><Link to='/my-spots' className='nav-item'>MY SPOTS</Link></li>
-                            <li><Link to='/add-spot' className='nav-item'>NEW SPOT</Link></li>
-                            <li className='nav-item' onClick={this.handleLogout}>LOGOUT</li>
+                                <li><Link className='nav-item' to='/login'>LOG IN</Link></li>
+                                <li><Link className='nav-item' to='/register'>REGISTER</Link></li>
                         </ul>
                     </HashRouter>
                     
@@ -55,26 +40,11 @@ class Nav extends Component{
 
                     <HashRouter>
                         <ul className={`hidden-by-default ${this.state.menuOpenStatus}`}>
-                                <li><Link to='/home' className='drop-item'>HOME</Link></li>
-                                <li><Link to='/my-spots' className='drop-item'>MY SPOTS</Link></li>
-                                <li><Link to='/add-spot' className='drop-item'>NEW SPOT</Link></li>
-                                <li className='nav-item' onClick={this.handleLogout}>LOGOUT</li>
+                                <li><Link className='nav-item' to='/login'>LOG IN</Link></li>
+                                <li><Link className='nav-item' to='/register'>REGISTER</Link></li>
                         </ul>
                     </HashRouter>
             </>
         )
     }
 }
-
-const mapStateToProps = reduxState => {
-    return {
-        username: reduxState.userReducer.username
-    }
-}
-
-export default withRouter(connect(mapStateToProps,
-    {
-        logoutUser,
-        getSession
-    }
-    )(Nav));

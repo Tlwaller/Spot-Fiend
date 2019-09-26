@@ -47,8 +47,8 @@ body {
 
 @media (min-width: 1050px) {
   #homepage {
-    background: url(../../Spot-Fiend-Photos/Matt-Berger-Rhino.jpg);
-    background-position-x: 50%;
+    background: url(../../Spot-Fiend-Photos/Matt-Berger-Rhino.jpg) no-repeat;
+    background-size: cover;
   }
 }
 

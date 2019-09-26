@@ -1,0 +1,187 @@
+body {
+  padding-top: 65px;
+}
+
+.back-btn {
+  background-color: #3f3f3f;
+  color: #ffcc00;
+  border-color: #ffcc00;
+  border-radius: 15px;
+  height: 3vh;
+  width: 20vw;
+  font-size: 15px;
+  width: 70px;
+  position: absolute;
+  top: 70px;
+  left: 10px;
+}
+
+@font-face {
+  font-family: skateandfontimport;
+  src: url("./SKATRG__.TTF");
+}
+
+.hidden-by-default {
+  display: none;
+}
+
+#guest-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #383838;
+  height: 95px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+#guest-nav .title-link {
+  text-decoration: none;
+}
+
+#guest-nav .title-link #title {
+  width: 300px;
+  font-family: 'skateandfontimport';
+  text-align: center;
+  color: #ffcc00;
+  font-size: 2em;
+}
+
+#guest-nav .menu li {
+  list-style-type: none;
+  margin-right: 2vw;
+}
+
+#guest-nav .hbgr {
+  cursor: pointer;
+  width: 50px;
+  height: 56px;
+  margin-right: 20px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.nav-item, .drop-item {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-item:hover, .drop-item:hover {
+  color: #ffcc00;
+}
+
+.drop-down, .drop-down-open, .drop-down-close {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  height: 100px;
+  background-color: #3f3f3f;
+  position: fixed;
+  z-index: 1;
+  list-style-type: none;
+}
+
+.drop-down-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-animation-name: open;
+          animation-name: open;
+  -webkit-animation-duration: .6s;
+          animation-duration: .6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+          animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.drop-down-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: close .6s forwards linear;
+          animation: close .6s forwards linear;
+  -webkit-animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+          animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@-webkit-keyframes open {
+  from {
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+  }
+  to {
+    -webkit-transform: translateY(11px);
+            transform: translateY(11px);
+  }
+}
+
+@keyframes open {
+  from {
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+  }
+  to {
+    -webkit-transform: translateY(11px);
+            transform: translateY(11px);
+  }
+}
+
+@-webkit-keyframes close {
+  from {
+    -webkit-transform: translateY(11px);
+            transform: translateY(11px);
+  }
+  to {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+@keyframes close {
+  from {
+    -webkit-transform: translateY(11px);
+            transform: translateY(11px);
+  }
+  to {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+@media (max-width: 669px) {
+  .hbgr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+@media (min-width: 670px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .drop-down, .drop-down-close, .drop-down-open {
+    display: none;
+  }
+}
+/*# sourceMappingURL=GuestNav.css.map */

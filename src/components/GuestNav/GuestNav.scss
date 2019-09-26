@@ -1,0 +1,117 @@
+@import '../../../main.scss';
+
+@font-face {
+    font-family: skateandfontimport;
+    src: url('./SKATRG__.TTF');
+}
+
+.hidden-by-default {
+    display: none;
+}
+
+#guest-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(56, 56, 56);
+    height: 95px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+
+    .title-link {
+            text-decoration: none;
+            
+            #title {
+                width: 300px;
+                font-family: 'skateandfontimport';
+                text-align: center;
+                color: color(accent);
+                font-size: 2em;
+            }
+        }
+
+    .menu li {
+        list-style-type: none;
+        margin-right: 2vw;
+    }
+
+    .hbgr {
+        cursor: pointer;
+        width: 50px;
+        height: 56px;
+        margin-right: 20px;
+        background-color: transparent;
+        border-color: transparent;
+    }
+}
+
+.nav-item, .drop-item {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item:hover, .drop-item:hover {
+    color: color(accent);
+}
+
+.drop-down, .drop-down-open, .drop-down-close {
+    flex-direction: column;
+    width: 100vw;
+    height: 100px;
+    background-color: color(primary);
+    position: fixed;
+    z-index: 1;
+    list-style-type: none;
+}
+
+.drop-down-open {
+    display: flex;
+    justify-content: space-evenly;
+    animation-name: open;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1)
+}
+
+.drop-down-close {
+    display: flex;
+    animation: close .6s forwards linear;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1)
+
+}
+
+@keyframes open {
+    from {
+        transform: translateY(-300px);
+    }
+    to {
+        transform: translateY(11px);
+    }
+}
+
+@keyframes close {
+    from {
+        transform: translateY(11px);
+    }
+    to {
+        transform: translateY(-100px);
+    }
+}
+
+@media (max-width: 669px) {
+    .hbgr {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media (min-width: 670px) {
+    .menu {display: flex;}
+    .drop-down, .drop-down-close, .drop-down-open {display: none;}
+}

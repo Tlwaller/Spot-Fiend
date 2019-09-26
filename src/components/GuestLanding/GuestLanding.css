@@ -86,6 +86,8 @@ body {
 @media (min-width: 1050px) {
   #guest-landing {
     background: url(../../Spot-Fiend-Photos/wallpaper_skb1012_02.jpg) no-repeat center center;
+    background-size: cover;
+    background-position-y: 0%;
   }
 }
 

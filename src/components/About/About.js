@@ -1,11 +1,11 @@
 import React from 'react';
 import './About.css';
-import Nav from '../Nav/Nav';
+import GuestNav from '../GuestNav/GuestNav';
 
 export default function About() {
     return (
         <div id='about'>
-            <Nav/>
+            <GuestNav/>
             <span>
                 <h1>About</h1>
                 halkdjfkhal i ohdflhaskfdhklhsdlhf sdflkhasdlfhhailwuehfl hd
