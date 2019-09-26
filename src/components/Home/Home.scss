@@ -1,6 +1,12 @@
 @import '../../../main.scss';
 
+@font-face {
+    font-family: skateandfontimport;
+    src: url('./SKATRG__.TTF');
+}
+
 #homepage {
+    padding-top: 20px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -11,15 +17,26 @@
     position: static;
     height: 100vh;
 
+    #main-title {
+        font-family: skateandfontimport;
+        font-size: 60px;
+        color: white;
+    }
+
     .add-spot {
-        @include big-button;
+        @include smol-button;
+        width: 130px;
+        height: 40px;
+        position: relative;
+        left: 320px;
+        margin-top: 10px;
     }
 }
 
 //background
 @media(min-width: 1050px) {
     #homepage {
-        background: url(../../Spot-Fiend-Photos/Street-Skateboard.jpg) no-repeat;
+        background: url(../../Spot-Fiend-Photos/wallpaper_skb1012_02.jpg) no-repeat;
         background-size: cover
     }
 }

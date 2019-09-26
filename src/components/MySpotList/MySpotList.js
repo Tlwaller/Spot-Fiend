@@ -17,9 +17,22 @@ class MySpotList extends Component {
                     <p>{post.description}</p>
                     <h5>{post.address}</h5>
                     {/* <h6>{post.user_id}</h6> */}
+
                 </div>
             )
         })
+
+        if(postsMapped.length === 0) {
+            return (
+                <div id='my-spots-page'>
+                <Nav/>
+                <h1>My Spots</h1>
+                <div className='my-posts-container'>
+                    <h2>No spots to show, get out there and find some!</h2>
+                </div>
+            </div>
+            )
+        }
         return (
             <div id='my-spots-page'>
                 <Nav/>

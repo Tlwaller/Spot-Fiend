@@ -7,7 +7,6 @@ body {
   color: #ffcc00;
   border-color: #ffcc00;
   border-radius: 15px;
-  height: 3vh;
   width: 20vw;
   font-size: 15px;
   width: 70px;
@@ -17,6 +16,8 @@ body {
 }
 
 #spot-list {
+  margin-top: 10px;
+  background-color: rgba(28, 28, 28, 0.705);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,19 +25,32 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-#spot-list h1 {
-  text-align: center;
-}
-
-#spot-list #go-to-spot {
-  background-color: #3f3f3f;
-  color: #ffcc00;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: auto;
+  height: 40vh;
+  width: 40vw;
+  border-style: inset;
+  border-radius: 20px;
   border-color: #ffcc00;
-  border-radius: 15px;
-  height: 3vh;
-  width: 20vw;
-  font-size: 15px;
+}
+
+#spot-list .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 37vw;
+  background-color: #3f3f3f;
+  border-style: ridge;
+  border-color: #ffcc00;
+  border-radius: 20px;
+  margin-top: 13px;
+  color: white;
 }
 /*# sourceMappingURL=SpotList.css.map */

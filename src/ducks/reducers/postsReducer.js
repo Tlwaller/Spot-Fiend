@@ -8,10 +8,10 @@ const UPDATE_POSTS = 'UPDATE_POSTS';
 const UPDATE_USER_POSTS = 'UPDATE_USER_POSTS'
 const ADD_POST = 'ADD_POST';
 
-export function updatePosts(postId) {
+export function updatePosts() {
     return {
         type:UPDATE_POSTS,
-        payload: axios.get(`/api/spots/${postId}`)
+        payload: axios.get(`/api/spots`)
     }
 };
 

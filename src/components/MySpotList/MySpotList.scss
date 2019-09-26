@@ -32,6 +32,10 @@
             margin-top: 13px;
             color: white;
         }
+
+        h2 {
+            color: white;
+        }
     }
 }
 
@@ -45,7 +49,7 @@
 
 @media(max-width: 830px) {
     #my-spots-page {
-        background: url(../../Spot-Fiend-Photos/01mag-jones-02-master1050-v4.jpg) no-repeat center center;
+        background: url(../../Spot-Fiend-Photos/mobile-pipes.jpg) no-repeat center center;
         background-size: cover;
     }
 }

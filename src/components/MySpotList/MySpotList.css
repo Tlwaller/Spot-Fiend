@@ -72,6 +72,10 @@ body {
   color: white;
 }
 
+#my-spots-page .my-posts-container h2 {
+  color: white;
+}
+
 @media (min-width: 830px) {
   #my-spots-page {
     background: url(../../Spot-Fiend-Photos/Eric-Koston.jpg) no-repeat center center;
@@ -81,7 +85,7 @@ body {
 
 @media (max-width: 830px) {
   #my-spots-page {
-    background: url(../../Spot-Fiend-Photos/01mag-jones-02-master1050-v4.jpg) no-repeat center center;
+    background: url(../../Spot-Fiend-Photos/mobile-pipes.jpg) no-repeat center center;
     background-size: cover;
   }
 }

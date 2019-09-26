@@ -1,14 +1,27 @@
 @import '../../../main.scss';
 
 #spot-list {
+    margin-top: 10px;
+    background-color: hsla(0, 0%, 11%, 0.705);
     display: flex;
     flex-direction: column;
-
-    h1 {
-        text-align: center;
-    }
-
-    #go-to-spot {
-        @include smol-button;
+    align-items: center;
+    overflow: auto;
+    height: 40vh;
+    width: 40vw;
+    border-style: inset;
+    border-radius: 20px;
+    border-color: color(accent);
+    .post {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 37vw;
+        background-color: color(primary);
+        border-style: ridge;
+        border-color: color(accent);
+        border-radius: 20px;
+        margin-top: 13px;
+        color: white;
     }
 }

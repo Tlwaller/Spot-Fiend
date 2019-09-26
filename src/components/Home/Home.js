@@ -18,10 +18,7 @@ export default function Home() {
     return (
         <div id='homepage'>
             <Nav/>
-            <h1>Home</h1>
-            <Link to='/add-spot'>
-                <button className='add-spot'>New Spot</button>
-            </Link>
+            <h1 id='main-title'>SPOT FIEND</h1>
             <ReactMapGL
                 className='map'
                 {...viewport}
@@ -31,6 +28,9 @@ export default function Home() {
                 >
                     markers here
                 </ReactMapGL>
+                <Link to='/add-spot'>
+                    <button className='add-spot'>New Spot</button>
+                </Link>
             <SpotList/>
         </div>
     )
