@@ -2,7 +2,7 @@
   background-color: #3f3f3f;
   color: #ffcc00;
   border-color: #ffcc00;
-  border-radius: 20px;
+  border-radius: 40px;
   text-align: center;
 }
 
@@ -15,7 +15,6 @@ body {
   color: #ffcc00;
   border-color: #ffcc00;
   border-radius: 15px;
-  height: 3vh;
   width: 20vw;
   font-size: 15px;
   width: 70px;
@@ -69,7 +68,7 @@ body {
 @media (max-width: 1050px) {
   #login-form {
     background: url(../../Spot-Fiend-Photos/mobile-b&w.jpg) no-repeat center center;
-    background-size: 100vh;
+    background-size: cover;
   }
 }
 /*# sourceMappingURL=Login.css.map */

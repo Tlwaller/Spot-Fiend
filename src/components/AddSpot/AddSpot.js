@@ -3,6 +3,7 @@ import './AddSpot.css';
 import {Link} from 'react-router-dom';
 import Nav from '../Nav/Nav';
 import {connect} from 'react-redux';
+import {Redirect} from 'react-router-dom';
 import {addPost} from '../../ducks/reducers/postsReducer'
 
 class AddSpot extends Component {
@@ -11,14 +12,15 @@ class AddSpot extends Component {
         this.state = {
             title: '',
             address: '',
-            description: ''
+            description: '',
+            sent: 0
         }
     }
 
     handleSubmit = e => {
         const {title, address, description} = this.state;
         const {addPost} = this.props;
-        addPost({title, address, description});
+        addPost({title, address, description}).then(this.setState({sent: 1}));
     }
 
     handleInput = e => {
@@ -26,6 +28,9 @@ class AddSpot extends Component {
     }
 
     render() {
+        if (this.state.sent === 1) {
+            return <Redirect to='/my-spots'/>
+        }
         return (
             <div id='post-spot-page'>
                 <Nav/>
@@ -35,6 +40,7 @@ class AddSpot extends Component {
                     <input className='new-spot-input' type='text' placeholder='Address' name='address' onChange={this.handleInput}/>
                     <input className='new-spot-input' type='text' name='description' placeholder='Description' onChange={this.handleInput}/>
                 </form>
+                <div id='bg'/>
                 <button className='submit-btn' onClick={this.handleSubmit}>Send it!</button>
             </div>
         )

@@ -1,6 +1,6 @@
 @import '../../../main.scss';
 
-#my-spots {
+#my-spots-page {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -8,18 +8,43 @@
     background: 17% url(../../Spot-Fiend-Photos/p2_1.jpg) ;
     background-size: cover;
     height: 100vh;
+    
+    .my-posts-container {
+        background-color: hsla(0, 0%, 11%, 0.705);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: auto;
+        height: 75vh;
+        width: 48vw;
+        border-style: inset;
+        border-radius: 20px;
+        border-color: color(accent);
+        .my-post {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            width: 45vw;
+            background-color: color(primary);
+            border-style: ridge;
+            border-color: color(accent);
+            border-radius: 20px;
+            margin-top: 13px;
+            color: white;
+        }
+    }
 }
 
 //background
-@media(min-width: 1050px) {
-    #my-spots {
+@media(min-width: 830px) {
+    #my-spots-page {
         background: url(../../Spot-Fiend-Photos/Eric-Koston.jpg) no-repeat center center;
         background-size: cover;
     }
 }
 
-@media(max-width: 1050px) {
-    #my-spots {
+@media(max-width: 830px) {
+    #my-spots-page {
         background: url(../../Spot-Fiend-Photos/01mag-jones-02-master1050-v4.jpg) no-repeat center center;
         background-size: cover;
     }

@@ -7,7 +7,6 @@ body {
   color: #ffcc00;
   border-color: #ffcc00;
   border-radius: 15px;
-  height: 3vh;
   width: 20vw;
   font-size: 15px;
   width: 70px;
@@ -16,7 +15,7 @@ body {
   left: 10px;
 }
 
-#my-spots {
+#my-spots-page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,15 +34,53 @@ body {
   height: 100vh;
 }
 
-@media (min-width: 1050px) {
-  #my-spots {
+#my-spots-page .my-posts-container {
+  background-color: rgba(28, 28, 28, 0.705);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: auto;
+  height: 75vh;
+  width: 48vw;
+  border-style: inset;
+  border-radius: 20px;
+  border-color: #ffcc00;
+}
+
+#my-spots-page .my-posts-container .my-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 45vw;
+  background-color: #3f3f3f;
+  border-style: ridge;
+  border-color: #ffcc00;
+  border-radius: 20px;
+  margin-top: 13px;
+  color: white;
+}
+
+@media (min-width: 830px) {
+  #my-spots-page {
     background: url(../../Spot-Fiend-Photos/Eric-Koston.jpg) no-repeat center center;
     background-size: cover;
   }
 }
 
-@media (max-width: 1050px) {
-  #my-spots {
+@media (max-width: 830px) {
+  #my-spots-page {
     background: url(../../Spot-Fiend-Photos/01mag-jones-02-master1050-v4.jpg) no-repeat center center;
     background-size: cover;
   }

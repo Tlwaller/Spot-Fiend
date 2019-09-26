@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {Redirect} from 'react-router-dom';
 import {registerUser} from '../../ducks/reducers/userReducer';
+import GuestNav from '../GuestNav/GuestNav';
 
 class Register extends Component {
     constructor() {
@@ -40,6 +41,7 @@ class Register extends Component {
         }
         return (
         <form id='register-form' onSubmit={this.handleSubmit}>
+            <GuestNav/>
             <Link to='/'>
                 <button className='back-btn'>‹Back</button>
             </Link>

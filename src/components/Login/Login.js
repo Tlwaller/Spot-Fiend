@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import {Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {loginUser} from '../../ducks/reducers/userReducer';
+import GuestNav from '../GuestNav/GuestNav';
 
 class Login extends Component {
     constructor() {
@@ -32,6 +33,7 @@ class Login extends Component {
         }
         return (
             <form id='login-form'>
+                <GuestNav/>
                 <Link to='/'>
                     <button className='back-btn'>‹Back</button>
                 </Link>

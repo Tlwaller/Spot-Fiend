@@ -7,7 +7,6 @@ body {
   color: #ffcc00;
   border-color: #ffcc00;
   border-radius: 15px;
-  height: 3vh;
   width: 20vw;
   font-size: 15px;
   width: 70px;
@@ -43,7 +42,7 @@ body {
 
 @media (max-width: 1050px) {
   #my-spot {
-    background: url(../../Spot-Fiend-Photos/Billy.jpg) no-repeat center center;
+    background: url(../../Spot-Fiend-Photos/gustavo-ribeiro-red-bull-skate.jpg) no-repeat center center;
     background-size: cover;
   }
 }

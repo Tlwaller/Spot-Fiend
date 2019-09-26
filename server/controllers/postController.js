@@ -12,10 +12,20 @@ module.exports = {
         console.log(req.session.user);
         if(req.session.user) {
             const post = await db.posts.addPost(req.session.user.id, title, address, description);
-            console.log(req.session.user.id)
             res.status(200).json(post)
         } else {
             res.status(401).json("Please sign in or create an account to post a spot.");
         }
-    }
+    },
+
+    getUserPost: async (req, res) => {
+        const db = req.app.get('db');
+        const posts = await db.posts.getUserPosts(req.session.user.id);
+        console.log(posts);
+        if(req.session.user) {
+            res.status(200).json(posts);
+        } else {
+            res.status(404).json("Nothing found here.");
+        }
+    } 
 }

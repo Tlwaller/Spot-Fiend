@@ -43,6 +43,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 1;
 }
 
 #post-spot-page #add-spot-form .new-spot-input {
@@ -88,9 +89,23 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: relative;
+    top: 70px;
   }
   .new-spot-input, .submit-btn {
     width: 50vw;
+  }
+  #bg {
+    position: relative;
+    height: 195px;
+    width: 70vw;
+    background-color: #3f3f3f;
+    bottom: 100px;
+    border-color: #ffcc00;
+    border-style: groove;
+    border-width: 4px;
+    border-radius: 20px;
+    opacity: .9;
   }
 }
 /*# sourceMappingURL=AddSpot.css.map */

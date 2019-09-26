@@ -8,9 +8,9 @@
     background-size: cover;
     height: 100vh;
 
-
     #add-spot-form{
         display: flex;
+        z-index: 1;
         .new-spot-input {
             @extend %input-field;
             height: 40px;
@@ -46,9 +46,24 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        position: relative;
+        top: 70px;
     }
 
     .new-spot-input, .submit-btn {
         width: 50vw;
+    }
+
+    #bg {
+        position: relative;
+        height: 195px;
+        width: 70vw;
+        background-color: color(primary);
+        bottom: 100px;
+        border-color: color(accent);
+        border-style: groove;
+        border-width: 4px;
+        border-radius: 20px;
+        opacity: .9;
     }
 }
