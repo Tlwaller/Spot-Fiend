@@ -9,9 +9,10 @@ module.exports = {
     addPost: async (req, res) => {
         const {title, address, description} = req.body;
         const db = req.app.get('db');
-        console.log(req.session);
+        console.log(req.session.user);
         if(req.session.user) {
-            const post = await db.posts.addPost(req.session.user.user_id, title, address, description);
+            const post = await db.posts.addPost(req.session.user.id, title, address, description);
+            console.log(req.session.user.id)
             res.status(200).json(post)
         } else {
             res.status(401).json("Please sign in or create an account to post a spot.");
