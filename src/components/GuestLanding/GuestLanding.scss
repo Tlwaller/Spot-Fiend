@@ -17,11 +17,13 @@
         color: white;
     }
 
-    .buttons {
+    .buttons-container {
         display: flex;
-        align-content: space-between;
+        justify-content: space-between;
+        width: 30vw;
         button {
-        @include big-button;
+            @include big-button;
+            width: 147px;
         }
     }
 }

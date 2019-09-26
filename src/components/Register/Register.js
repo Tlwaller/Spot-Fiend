@@ -23,7 +23,7 @@ class Register extends Component {
         const {registerUser} = this.props;
 
         if(this.state.password === this.state.password2) {
-            registerUser({username, password});
+            registerUser({username, password, email});
         }else {
             this.setState({pWstatus: 'Passwords do not match.'})
         }

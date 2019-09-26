@@ -19,9 +19,9 @@ export default function GuestLanding() {
             {/* <img className='mobileBG' src={mobileBG} alt='mobileBG'/> */}
             <h1 className='heading'>Welcome to Spot Fiend</h1>
 
-            <div className='buttons'>
-                <Link to='/login'>
-                <button>Log In</button>
+            <div className='buttons-container'>
+                <Link className='buttons' to='/login'>
+                    <button>Log In</button>
                 </Link>
                 <Link to='/register'>
                     <button>Register</button>

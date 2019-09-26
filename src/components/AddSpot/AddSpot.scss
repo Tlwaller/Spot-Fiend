@@ -2,16 +2,25 @@
 
 #post-spot-page {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     background: url(../../Spot-Fiend-Photos/IMG_2221.jpg) no-repeat center center; 
     background-size: cover;
     height: 100vh;
 
-    .submit-btn {
-        @include big-button;
+
+    #add-spot-form{
+        display: flex;
+        .new-spot-input {
+            @extend %input-field;
+            height: 40px;
+        }
     }
+}
+.submit-btn {
+    @include big-button;
+    height: 45px;
+    align-self: center;
 }
 
 //background
@@ -21,11 +30,25 @@
         background-size: cover;
         background-position-x:60%;
     }
+
+    .new-spot-input, .submit-btn  {
+        width: 30vw;
+    }
 }
 
 @media(max-width: 650px) {
     #post-spot-page {
         background: url(../../Spot-Fiend-Photos/mobile-air.jpg) no-repeat center center;
         background-size: cover;
+    }
+
+    #add-spot-form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .new-spot-input, .submit-btn {
+        width: 50vw;
     }
 }
