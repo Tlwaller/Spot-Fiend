@@ -33,5 +33,6 @@ app.post('/auth/logout', authController.logout);
 app.get('/api/spots', postController.displayPosts);
 app.get('/api/my-spots', postController.getUserPost);
 app.post('/api/spots', postController.addPost);
+app.delete('/api/spots/', postController.deletePost);
 
 app.listen(SERVER_PORT, () => console.log(`Server listening on port ${SERVER_PORT}`));

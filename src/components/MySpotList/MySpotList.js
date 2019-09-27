@@ -2,22 +2,31 @@ import React, {Component} from 'react';
 import './MySpotList.css';
 import Nav from '../Nav/Nav';
 import {connect} from 'react-redux';
-import {updateUserPosts} from '../../ducks/reducers/postsReducer'
+import {updateUserPosts, deletePost} from '../../ducks/reducers/postsReducer'
 
 class MySpotList extends Component {
     componentDidMount() {
         this.props.updateUserPosts();
     }
 
+    handleDelete = (spot_id) => {
+        this.props.deletePost(spot_id);
+    }
+
     render() {
         const postsMapped = this.props.posts.map((post, i) => {
             return (
+                
                 <div key={i} className='my-post'>
-                    <h2>{post.title}</h2>
-                    <p>{post.description}</p>
-                    <h5>{post.address}</h5>
-                    {/* <h6>{post.user_id}</h6> */}
-
+                    <div className='post-items-container'>
+                        <h2 className='my-post-item'>{post.title}</h2>
+                        <p className='my-post-item'>{post.description}</p>
+                        <h5 className='my-post-item'>{post.address}</h5>
+                    </div>
+                    
+                    <button className='delet-btn'
+                        onClick={() => this.handleDelete(post.spot_id)}
+                    >Remove</button> 
                 </div>
             )
         })
@@ -52,4 +61,4 @@ const mapStateToProps = reduxState => {
     }
 }
 
-export default connect(mapStateToProps, {updateUserPosts})(MySpotList);
+export default connect(mapStateToProps, {updateUserPosts, deletePost})(MySpotList);

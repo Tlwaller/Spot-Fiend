@@ -16,21 +16,34 @@
         align-items: center;
         overflow: auto;
         height: 75vh;
-        width: 48vw;
         border-style: inset;
         border-radius: 20px;
         border-color: color(accent);
+
         .my-post {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: space-between;
             height: auto;
-            width: 45vw;
             background-color: color(primary);
             border-style: ridge;
             border-color: color(accent);
             border-radius: 20px;
             margin-top: 13px;
             color: white;
+
+            .my-post-item-container {
+                display: flex;
+                flex-direction: column;
+            }
+            
+
+            .delet-btn {
+                @include smol-button;
+                width: 100px;
+                height: 40px;
+                position: relative;
+            }
         }
 
         h2 {
@@ -42,7 +55,7 @@
 //background
 @media(min-width: 830px) {
     #my-spots-page {
-        background: url(../../Spot-Fiend-Photos/Eric-Koston.jpg) no-repeat center center;
+        background: url(../../Spot-Fiend-Photos/rolling.jpg) no-repeat center center;
         background-size: cover;
     }
 }
@@ -51,5 +64,23 @@
     #my-spots-page {
         background: url(../../Spot-Fiend-Photos/mobile-pipes.jpg) no-repeat center center;
         background-size: cover;
+    }
+}
+
+@media(min-width: 630px) {
+    .my-posts-container {
+        width: 48vw;
+        .my-post {
+            width: 45vw;
+        }
+    }
+}
+
+@media(max-width: 630px) {
+    .my-posts-container {
+        width: 80vw;
+        .my-post {
+            width: 75vw;
+        }
     }
 }

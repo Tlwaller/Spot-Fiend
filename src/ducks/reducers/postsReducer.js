@@ -7,6 +7,7 @@ const initialState = {
 const UPDATE_POSTS = 'UPDATE_POSTS';
 const UPDATE_USER_POSTS = 'UPDATE_USER_POSTS'
 const ADD_POST = 'ADD_POST';
+const DELETE_POST = 'DELETE_POST';
 
 export function updatePosts() {
     return {
@@ -29,9 +30,15 @@ export function addPost(newPost) {
     }
 };
 
+export function deletePost(spot_id) {
+    return {
+        type: DELETE_POST,
+        payload: axios.delete('/api/spots/', {data: {spot_id}})
+    }
+}
+
 export default function reducer(state = initialState, action) {
     const {type, payload} = action;
-    console.log(payload)
 
     switch(type) {
         case `${UPDATE_POSTS}_FULFILLED`:
@@ -47,6 +54,12 @@ export default function reducer(state = initialState, action) {
             };
 
         case `${ADD_POST}_FULFILLED`:
+            return {
+                ...state,
+                posts: payload.data
+            };
+        
+        case `${DELETE_POST}_FULFILLED`:
             return {
                 ...state,
                 posts: payload.data
