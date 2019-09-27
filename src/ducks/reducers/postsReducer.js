@@ -8,6 +8,7 @@ const UPDATE_POSTS = 'UPDATE_POSTS';
 const UPDATE_USER_POSTS = 'UPDATE_USER_POSTS'
 const ADD_POST = 'ADD_POST';
 const DELETE_POST = 'DELETE_POST';
+const EDIT_POST = 'EDIT_POST';
 
 export function updatePosts() {
     return {
@@ -37,6 +38,13 @@ export function deletePost(spot_id) {
     }
 }
 
+export function editPost(postInfo) {
+    return {
+        type: EDIT_POST,
+        payload: axios.put('/api/spots/', postInfo)
+    }
+}
+
 export default function reducer(state = initialState, action) {
     const {type, payload} = action;
 
@@ -60,6 +68,12 @@ export default function reducer(state = initialState, action) {
             };
         
         case `${DELETE_POST}_FULFILLED`:
+            return {
+                ...state,
+                posts: payload.data
+            };
+
+        case `${EDIT_POST}_FULFILLED`:
             return {
                 ...state,
                 posts: payload.data

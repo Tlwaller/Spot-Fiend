@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './AddSpot.css';
-import {Link} from 'react-router-dom';
 import Nav from '../Nav/Nav';
 import {connect} from 'react-redux';
 import {Redirect} from 'react-router-dom';

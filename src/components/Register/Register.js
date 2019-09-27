@@ -71,7 +71,7 @@ class Register extends Component {
                 placeholder='Email'
                 name='email'
                 onChange={this.handleInput}/>
-                <button type='submit' className='register-input' type='Submit'>Register</button>
+                <button className='register-input' type='Submit'>Register</button>
             </form>
         )
     }

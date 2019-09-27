@@ -32,6 +32,19 @@
             margin-top: 13px;
             color: white;
 
+            .edit-post-input {
+                @extend %input-field;
+                width: 200px;
+                height: 30px;
+            }
+
+            .edit-btn {
+                @include smol-button;
+                width: 100px;
+                height: 40px;
+                position: relative;
+            }
+
             .my-post-item-container {
                 display: flex;
                 flex-direction: column;

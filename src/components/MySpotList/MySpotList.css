@@ -1,3 +1,11 @@
+#my-spots-page .my-posts-container .my-post .edit-post-input {
+  background-color: #3f3f3f;
+  color: #ffcc00;
+  border-color: #ffcc00;
+  border-radius: 40px;
+  text-align: center;
+}
+
 body {
   padding-top: 65px;
 }
@@ -71,6 +79,23 @@ body {
   border-radius: 20px;
   margin-top: 13px;
   color: white;
+}
+
+#my-spots-page .my-posts-container .my-post .edit-post-input {
+  width: 200px;
+  height: 30px;
+}
+
+#my-spots-page .my-posts-container .my-post .edit-btn {
+  background-color: #3f3f3f;
+  color: #ffcc00;
+  border-color: #ffcc00;
+  border-radius: 15px;
+  width: 20vw;
+  font-size: 15px;
+  width: 100px;
+  height: 40px;
+  position: relative;
 }
 
 #my-spots-page .my-posts-container .my-post .my-post-item-container {
