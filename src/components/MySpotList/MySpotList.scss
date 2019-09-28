@@ -55,7 +55,7 @@
             
             .toggle-edit {
                 @include smol-button;
-                    width: 80px;
+                    width: 30px;
                     height: 25px;
                     position: relative;
             }
@@ -65,12 +65,12 @@
                 flex-direction: column;
             }
             
-
             .delet-btn {
                 @include smol-button;
-                width: 100px;
-                height: 40px;
+                width: 30px;
+                height: 30px;
                 position: relative;
+                margin-top: 10px;
             }
         }
 

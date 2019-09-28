@@ -122,7 +122,7 @@ body {
   border-radius: 15px;
   width: 20vw;
   font-size: 15px;
-  width: 80px;
+  width: 30px;
   height: 25px;
   position: relative;
 }
@@ -144,9 +144,10 @@ body {
   border-radius: 15px;
   width: 20vw;
   font-size: 15px;
-  width: 100px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   position: relative;
+  margin-top: 10px;
 }
 
 #my-spots-page .my-posts-container h2 {

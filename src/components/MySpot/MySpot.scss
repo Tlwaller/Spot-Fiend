@@ -1,12 +1,5 @@
 @import '../../../main.scss';
 
-#my-spot {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-}
 
 //background
 @media(min-width: 1050px) {
