@@ -6,6 +6,7 @@
 }
 
 #homepage {
+    text-align: center;
     padding-top: 20px;
     display: flex;
     justify-content: flex-start;
@@ -27,9 +28,9 @@
         @include smol-button;
         width: 130px;
         height: 40px;
-        position: relative;
+        // position: relative;
         left: 320px;
-        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 

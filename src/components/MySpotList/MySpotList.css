@@ -1,4 +1,4 @@
-#my-spots-page .my-posts-container .my-post .edit-post-input {
+#my-spots-page .my-posts-container .my-post .edit-post-form .edit-post-input {
   background-color: #3f3f3f;
   color: #ffcc00;
   border-color: #ffcc00;
@@ -81,12 +81,29 @@ body {
   color: white;
 }
 
-#my-spots-page .my-posts-container .my-post .edit-post-input {
+#my-spots-page .my-posts-container .my-post .edit-post-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: flex-end;
+}
+
+#my-spots-page .my-posts-container .my-post .edit-post-form .edit-post-input {
   width: 200px;
   height: 30px;
 }
 
-#my-spots-page .my-posts-container .my-post .edit-btn {
+#my-spots-page .my-posts-container .my-post .edit-post-form .edit-btn {
   background-color: #3f3f3f;
   color: #ffcc00;
   border-color: #ffcc00;
@@ -94,7 +111,19 @@ body {
   width: 20vw;
   font-size: 15px;
   width: 100px;
-  height: 40px;
+  height: 20px;
+  position: relative;
+}
+
+#my-spots-page .my-posts-container .my-post .toggle-edit {
+  background-color: #3f3f3f;
+  color: #ffcc00;
+  border-color: #ffcc00;
+  border-radius: 15px;
+  width: 20vw;
+  font-size: 15px;
+  width: 80px;
+  height: 25px;
   position: relative;
 }
 

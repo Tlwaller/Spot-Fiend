@@ -21,6 +21,7 @@ body {
 }
 
 #homepage {
+  text-align: center;
   padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,9 +57,8 @@ body {
   font-size: 15px;
   width: 130px;
   height: 40px;
-  position: relative;
   left: 320px;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 1050px) {

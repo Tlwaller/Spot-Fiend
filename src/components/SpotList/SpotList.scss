@@ -8,20 +8,39 @@
     align-items: center;
     overflow: auto;
     height: 40vh;
-    width: 40vw;
     border-style: inset;
     border-radius: 20px;
     border-color: color(accent);
+
     .post {
         display: flex;
         flex-direction: column;
         height: auto;
-        width: 37vw;
         background-color: color(primary);
         border-style: ridge;
         border-color: color(accent);
         border-radius: 20px;
         margin-top: 13px;
         color: white;
+    }
+}
+
+@media(min-width: 880px) {
+    #spot-list {
+        width: 40vw;
+
+        .post {
+            width: 37vw;
+        }
+    }
+}
+
+@media(max-width: 880px) {
+    #spot-list {
+        width: 70vw;
+
+        .post {
+            width: 66vw;
+        }
     }
 }
