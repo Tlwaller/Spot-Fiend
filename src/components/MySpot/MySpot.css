@@ -21,6 +21,10 @@ body {
     background-size: cover;
     background-position-x: 60%;
   }
+  .my-spot-photo {
+    height: 100px;
+    width: 100px;
+  }
 }
 
 @media (max-width: 1050px) {

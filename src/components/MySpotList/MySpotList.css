@@ -135,6 +135,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 200px;
 }
 
 #my-spots-page .my-posts-container .my-post .delet-btn {
@@ -148,6 +149,11 @@ body {
   height: 30px;
   position: relative;
   margin-top: 10px;
+}
+
+#my-spots-page .my-posts-container .my-spot-photo {
+  height: 200px;
+  width: auto;
 }
 
 #my-spots-page .my-posts-container h2 {

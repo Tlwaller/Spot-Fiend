@@ -1,4 +1,4 @@
-#post-spot-page #add-spot-form .new-spot-input {
+#post-spot-page #add-spot-form .new-spot-input, #post-spot-page #add-spot-form .desc-input {
   background-color: #3f3f3f;
   color: #ffcc00;
   border-color: #ffcc00;
@@ -44,10 +44,29 @@ body {
   display: -ms-flexbox;
   display: flex;
   z-index: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 390px;
 }
 
 #post-spot-page #add-spot-form .new-spot-input {
   height: 40px;
+}
+
+#post-spot-page #add-spot-form .desc-input {
+  height: 200px;
+  width: 40vw;
+  border-radius: 10px;
+  vertical-align: 1;
+  text-align: left;
 }
 
 .submit-btn {
@@ -60,6 +79,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  cursor: pointer;
 }
 
 @media (min-width: 650px) {
@@ -97,10 +117,10 @@ body {
   }
   #bg {
     position: relative;
-    height: 195px;
+    height: 430px;
     width: 70vw;
     background-color: #3f3f3f;
-    bottom: 100px;
+    bottom: 330px;
     border-color: #ffcc00;
     border-style: groove;
     border-width: 4px;

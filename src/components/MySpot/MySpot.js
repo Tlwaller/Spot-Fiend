@@ -27,7 +27,6 @@ class MySpot extends Component {
     }
 
     handleEdit = (spot_id) => {
-        
         const {title, address, description} = this.state;
         console.log("myspotlist state: " + spot_id, title, address, description)
         this.props.editPost({spot_id, title, address, description})
@@ -52,14 +51,18 @@ class MySpot extends Component {
                         <p className='my-post-item'>{post.description}</p>
                         <h5 className='my-post-item'>{post.address}</h5>
                     </div>
+                        <img className='my-spot-photo' src={post.url} alt='spot photo'/>
 
                     <div className='mypost-btn-container'>
-                            <img src='https://www.shareicon.net/data/128x128/2016/09/05/825547_document_512x512.png'onClick={this.toggleEdit} className='toggle-edit'/>
+                            <img src='https://www.shareicon.net/data/128x128/2016/09/05/825547_document_512x512.png'
+                            onClick={this.toggleEdit}
+                            className='toggle-edit'
+                            alt='Edit'/>
                             <img src='https://www.shareicon.net/data/128x128/2016/09/05/825117_delete_512x512.png'
                             className='delet-btn'
                             onClick={() => this.handleDelete(post.spot_id)}
-                            />
-                        </div>
+                            alt='Remove'/>
+                    </div>
 
                     <form className='edit-post-form' style={this.state.editing? {display: 'flex'} : {display: 'none'}}>
                         <input

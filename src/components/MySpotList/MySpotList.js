@@ -13,7 +13,7 @@ class MySpotList extends Component {
 
     render() {
         const postsMapped = this.props.posts.map((post, i) => {
-            return <MySpot post={post} i={i}/>
+            return <MySpot key={i} post={post} i={i}/>
         })
 
         if (postsMapped.length === 0) {

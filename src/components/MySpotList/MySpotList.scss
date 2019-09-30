@@ -63,6 +63,7 @@
             .my-post-item-container {
                 display: flex;
                 flex-direction: column;
+                width: 200px;
             }
             
             .delet-btn {
@@ -72,6 +73,11 @@
                 position: relative;
                 margin-top: 10px;
             }
+        }
+
+        .my-spot-photo {
+            height: 200px;
+            width: auto;
         }
 
         h2 {
