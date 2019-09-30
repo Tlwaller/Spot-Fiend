@@ -1,5 +1,71 @@
 @import '../../../main.scss';
 
+.my-post {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    background-color: color(primary);
+    border-style: ridge;
+    border-color: color(accent);
+    border-radius: 20px;
+    margin-top: 13px;
+    color: white;
+
+    .edit-post-form {
+        position: absolute;
+        margin-left: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        justify-self: flex-end;
+        
+        .edit-post-input {
+            @extend %input-field;
+            width: 200px;
+            height: 30px;
+        }
+
+        .edit-btn {
+            @include smol-button;
+            width: 100px;
+            height: 20px;
+            position: relative;
+        }
+    }
+    
+    .toggle-edit {
+        @include smol-button;
+            width: 30px;
+            height: 25px;
+            position: static;
+    }
+
+    .my-post-item-container {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+    
+    .delet-btn {
+        @include smol-button;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        margin-top: 10px;
+    }
+}
+
+.my-spot-photo {
+    height: auto;
+    width: auto;
+    max-width: 250px;
+    max-height: 200px;
+}
+
+h2 {
+    color: white;
+}
 
 //background
 @media(min-width: 1050px) {
@@ -14,5 +80,17 @@
     #my-spot {
         background: url(../../Spot-Fiend-Photos/gustavo-ribeiro-red-bull-skate.jpg) no-repeat center center;
         background-size: cover;
+    }
+}
+
+@media(max-width: 800px) {
+    .my-posts-container {
+        width: 80vw;
+        .my-post {
+            width: 75vw;
+        }
+    }
+    .my-post {
+        flex-direction: column;
     }
 }

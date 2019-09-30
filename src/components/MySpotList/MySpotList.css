@@ -1,11 +1,3 @@
-#my-spots-page .my-posts-container .my-post .edit-post-form .edit-post-input {
-  background-color: #3f3f3f;
-  color: #ffcc00;
-  border-color: #ffcc00;
-  border-radius: 40px;
-  text-align: center;
-}
-
 body {
   padding-top: 65px;
 }
@@ -61,105 +53,6 @@ body {
   border-color: #ffcc00;
 }
 
-#my-spots-page .my-posts-container .my-post {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: auto;
-  background-color: #3f3f3f;
-  border-style: ridge;
-  border-color: #ffcc00;
-  border-radius: 20px;
-  margin-top: 13px;
-  color: white;
-}
-
-#my-spots-page .my-posts-container .my-post .edit-post-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-self: flex-end;
-}
-
-#my-spots-page .my-posts-container .my-post .edit-post-form .edit-post-input {
-  width: 200px;
-  height: 30px;
-}
-
-#my-spots-page .my-posts-container .my-post .edit-post-form .edit-btn {
-  background-color: #3f3f3f;
-  color: #ffcc00;
-  border-color: #ffcc00;
-  border-radius: 15px;
-  width: 20vw;
-  font-size: 15px;
-  width: 100px;
-  height: 20px;
-  position: relative;
-}
-
-#my-spots-page .my-posts-container .my-post .toggle-edit {
-  background-color: #3f3f3f;
-  color: #ffcc00;
-  border-color: #ffcc00;
-  border-radius: 15px;
-  width: 20vw;
-  font-size: 15px;
-  width: 30px;
-  height: 25px;
-  position: relative;
-}
-
-#my-spots-page .my-posts-container .my-post .my-post-item-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 200px;
-}
-
-#my-spots-page .my-posts-container .my-post .delet-btn {
-  background-color: #3f3f3f;
-  color: #ffcc00;
-  border-color: #ffcc00;
-  border-radius: 15px;
-  width: 20vw;
-  font-size: 15px;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  margin-top: 10px;
-}
-
-#my-spots-page .my-posts-container .my-spot-photo {
-  height: 200px;
-  width: auto;
-}
-
-#my-spots-page .my-posts-container h2 {
-  color: white;
-}
-
 @media (min-width: 830px) {
   #my-spots-page {
     background: url(../../Spot-Fiend-Photos/rolling.jpg) no-repeat center center;
@@ -171,24 +64,6 @@ body {
   #my-spots-page {
     background: url(../../Spot-Fiend-Photos/mobile-pipes.jpg) no-repeat center center;
     background-size: cover;
-  }
-}
-
-@media (min-width: 630px) {
-  .my-posts-container {
-    width: 48vw;
-  }
-  .my-posts-container .my-post {
-    width: 45vw;
-  }
-}
-
-@media (max-width: 630px) {
-  .my-posts-container {
-    width: 80vw;
-  }
-  .my-posts-container .my-post {
-    width: 75vw;
   }
 }
 /*# sourceMappingURL=MySpotList.css.map */

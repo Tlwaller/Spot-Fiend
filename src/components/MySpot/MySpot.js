@@ -49,7 +49,8 @@ class MySpot extends Component {
                     <div className='my-post-item-container'>
                         <h2 className='my-post-item'>{post.title}</h2>
                         <p className='my-post-item'>{post.description}</p>
-                        <h5 className='my-post-item'>{post.address}</h5>
+                        <h5 className='my-post-item'>{post.latitude}</h5>
+                        <h5 className='my-post-item'>{post.longitude}</h5>
                     </div>
                         <img className='my-spot-photo' src={post.url} alt='spot photo'/>
 
@@ -75,8 +76,15 @@ class MySpot extends Component {
                         <input
                         className='edit-post-input'
                             type='text'
-                            placeholder='edit address'
-                            name='address'
+                            placeholder='edit latitude'
+                            name='latitude'
+                            onChange={this.handleInput}
+                        />
+                        <input
+                        className='edit-post-input'
+                            type='text'
+                            placeholder='edit longitude'
+                            name='longitude'
                             onChange={this.handleInput}
                         />
                         <input

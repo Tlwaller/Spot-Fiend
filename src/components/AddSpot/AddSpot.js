@@ -4,14 +4,16 @@ import Nav from '../Nav/Nav';
 import {connect} from 'react-redux';
 import {Redirect} from 'react-router-dom';
 import {addPost} from '../../ducks/reducers/postsReducer'
-import Axios from 'axios';
+import {Link} from 'react-router-dom';
 
 class AddSpot extends Component {
     constructor() {
         super();
         this.state = {
             title: '',
-            address: '',
+            long: 0,
+            latitude: 0,
+            longitude: 0,
             description: '',
             sent: 0,
             url: ''
@@ -19,9 +21,11 @@ class AddSpot extends Component {
     }
 
     handleSubmit = e => {
-        const {title, address, description, url} = this.state;
+        e.preventDefault();
+        const {title, latitude, longitude, description, url} = this.state;
         const {addPost} = this.props;
-        addPost({title, address, description, url}).then(this.setState({sent: 1}));
+
+        addPost({title, latitude, longitude, description, url}).then(this.setState({sent: 1}));
     }
 
     handleInput = e => {
@@ -58,7 +62,11 @@ class AddSpot extends Component {
                 <form id='add-spot-form'>
                     <button className='add-photo' onClick ={()=>widget.open()}>add pic</button>
                     <input className='new-spot-input' type='text' placeholder='Title' name='title' onChange={this.handleInput}/>
-                    <input className='new-spot-input' type='text' placeholder='Address' name='address' onChange={this.handleInput}/>
+                    <input className='new-spot-input' type='text' placeholder='latitude' name='latitude' onChange={this.handleInput}/>
+                    <input className='new-spot-input' type='text' placeholder='longitude' name='longitude' onChange={this.handleInput}/>
+                    <h4>
+                        Check out <a href="https://www.latlong.net" target="_blank">latlong.net</a> for coordinates
+                    </h4>
                     <textarea className='desc-input' type='text' name='description' placeholder='Description' onChange={this.handleInput}/>
                     <button className='submit-btn' onClick={this.handleSubmit}>Send it!</button>
                 </form>
