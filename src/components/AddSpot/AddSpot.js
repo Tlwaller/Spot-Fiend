@@ -60,7 +60,7 @@ class AddSpot extends Component {
                 <Nav/>
                 <h1>New Spot</h1>
                 <form id='add-spot-form'>
-                    <button className='add-photo' onClick ={()=>widget.open()}>add pic</button>
+                    <img src='http://support.hostgator.com/img/articles/weebly_image_sample.png' className='add-photo' onClick ={()=>widget.open()}/>
                     <input className='new-spot-input' type='text' placeholder='Title' name='title' onChange={this.handleInput}/>
                     <input className='new-spot-input' type='text' placeholder='latitude' name='latitude' onChange={this.handleInput}/>
                     <input className='new-spot-input' type='text' placeholder='longitude' name='longitude' onChange={this.handleInput}/>

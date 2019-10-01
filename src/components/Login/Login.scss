@@ -1,20 +1,40 @@
 @import '../../../main.scss';
 
-#login-form {
+#login-page {
     padding-top: 105px;
     padding-bottom: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: black;
 
-    .login-input {
+    #login-form {
         @extend %input-field;
-        margin-top: 5px;
-        height: 30px;
-        width: 30vw;
-        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(31, 31, 31, 0.568);
+        height: 400px;
+        width: 400px;
+
+
+        #login {
+            @include big-button;
+            margin-top: 20px;
+        }
+
+        .login-input {
+            margin-top: 60px;;
+        }
+
+        h1 {
+            color: color(accent);
+            font-size: 30px;
+            font-family: 'Sedgwick Ave Display', cursive;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
     }
+
+    
 }
 
 //input size
@@ -32,13 +52,13 @@
 
 //background
 @media(min-width: 1050px) {
-    #login-form{
+    #login-page{
         background: url(../../Spot-Fiend-Photos/p2_1.jpg) no-repeat center center; 
         background-size: cover;    }
 }
 
 @media(max-width: 1050px) {
-    #login-form {
+    #login-page {
         background: url(../../Spot-Fiend-Photos/mobile-b&w.jpg) no-repeat center center;
         background-size: cover;
     }

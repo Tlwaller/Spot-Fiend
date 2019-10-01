@@ -40,9 +40,6 @@ class Nav extends Component{
                     <HashRouter>
                         <Link className='title-link' to='/home'>
                             <h1 id='title'>SF</h1>
-                            {/* <h1 id='title'>S</h1>
-                            <img src={logo.svg} height='30px' width='30px'/>
-                            <h1 id='title'>F</h1> */}
                         </Link>
                         <ul className='menu'>
                             <li><Link to='/home' className='nav-item'>HOME</Link></li>

@@ -58,6 +58,9 @@ body {
 #guest-nav .menu li {
   list-style-type: none;
   margin-right: 2vw;
+  color: #ffcc00;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: 'Sedgwick Ave Display', cursive;
 }
 
 #guest-nav .hbgr {

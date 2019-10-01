@@ -19,10 +19,16 @@
 
     .buttons-container {
         display: flex;
+        flex-direction: row;
         button {
             @include big-button;
             width: 147px;
             height: 50px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            color: white;
         }
     }
 }

@@ -32,24 +32,30 @@ class Login extends Component {
             return <Redirect to='/Home'/>
         }
         return (
-            <form id='login-form'>
+            <div id='login-page'>
                 <GuestNav/>
-                <Link to='/'>
-                    <button className='back-btn'>‹Back</button>
-                </Link>
-                <h1>Log In</h1>
-                <input className='login-input'
-                type='text'
-                placeholder='Username'
-                name='username'
-                onChange={this.handleInput}/>
-                <input className='login-input'
-                type='text' 
-                placeholder='Password'
-                name='password'
-                onChange={this.handleInput}/>
-                <button type='submit' onClick={this.handleSubmit} className='login-input'>Log In</button>
-            </form>
+                <form id='login-form'>
+                    
+                    <div class='input'>
+                    <input id='input-a'
+                    className='login-input'
+                    type='text'
+                    name='username'
+                    onChange={this.handleInput}/>
+                    <label for='input-a'>{this.state.username ? '' : 'Username'}</label>
+                    </div>
+                    <div class='input'>
+                    <input id='input-b'
+                    className='login-input'
+                    type='text' 
+                    name='password'
+                    onChange={this.handleInput}/>
+                    <label for='input-b'>{this.state.password ? '' : 'Password'}</label>
+                    </div>
+
+                    <button type='submit' onClick={this.handleSubmit} id='login'>Log In</button>
+                </form>
+            </div>
         )
     }
 }

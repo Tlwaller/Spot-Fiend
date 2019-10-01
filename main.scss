@@ -8,11 +8,13 @@ $colors: (
 }
 
 @mixin big-button {
-    background-color: color(primary);
+    background-color: transparent;
+    border-style: none;
     color: color(accent);
-    border-color: color(accent);
-    border-radius: 40px;
-    font-size: 15px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 30px;
+    font-family: 'Sedgwick Ave Display', cursive;
+    cursor: pointer;
     }
 
 @mixin smol-button {
@@ -24,14 +26,6 @@ $colors: (
     font-size: 15px;
     }
 
-%input-field {
-    background-color: color(primary);
-    color: color(accent);
-    border-color: color(accent);
-    border-radius: 40px;
-    text-align: center;
-}
-
 body { 
     padding-top: 65px; 
 }
@@ -42,4 +36,38 @@ body {
     position: absolute;
     top: 70px;
     left: 10px;
+}
+%input-field {
+    input{    
+        width: 300px;
+        height: 40px;  
+        font-size: 30px;
+        font-family: 'Sedgwick Ave Display', cursive;
+        background-color: transparent;
+        border: none;   
+        border-top: 3px solid color(accent);
+        border-bottom: 3px solid color(accent);
+        outline: none;
+        color: color(accent);
+        padding-left: 10px;  
+        
+        &:focus + label{
+        top: -110px;
+        font-size: 1.2em;
+        transition: all .3s;
+        }
+    }
+    
+    label{
+        display: block;
+        position: relative;
+        left: 10px;
+        top: -43px;
+        font-size: 30px;
+        font-family: 'Sedgwick Ave Display', cursive;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        cursor: text;
+        color: color(accent);    
+        transition: all .3s;    
+    }
 }

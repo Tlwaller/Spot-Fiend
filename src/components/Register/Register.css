@@ -1,11 +1,3 @@
-#register-form .register-input {
-  background-color: #3f3f3f;
-  color: #ffcc00;
-  border-color: #ffcc00;
-  border-radius: 40px;
-  text-align: center;
-}
-
 body {
   padding-top: 65px;
 }
@@ -23,9 +15,60 @@ body {
   left: 10px;
 }
 
-#register-form {
+#register-page #register-form input {
+  width: 300px;
+  height: 40px;
+  font-size: 30px;
+  font-family: 'Sedgwick Ave Display', cursive;
+  background-color: transparent;
+  border: none;
+  border-top: 3px solid #ffcc00;
+  border-bottom: 3px solid #ffcc00;
+  outline: none;
+  color: #ffcc00;
+  padding-left: 10px;
+}
+
+#register-page #register-form input:focus + label {
+  top: -110px;
+  font-size: 1.2em;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#register-page #register-form label {
+  display: block;
+  position: relative;
+  left: 10px;
+  top: -43px;
+  font-size: 30px;
+  font-family: 'Sedgwick Ave Display', cursive;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  cursor: text;
+  color: #ffcc00;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#register-page {
   padding-top: 105px;
   padding-bottom: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#register-page #register-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,12 +79,26 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(48, 48, 48, 0.664);
+  height: 550px;
+  width: 400px;
 }
 
-#register-form .register-input {
-  margin-top: 5px;
-  height: 30px;
-  font-size: 15px;
+#register-page #register-form .register-input {
+  margin-top: 30px;
+}
+
+#register-page #register-form #register {
+  background-color: transparent;
+  border-style: none;
+  color: #ffcc00;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 30px;
+  font-family: 'Sedgwick Ave Display', cursive;
+  cursor: pointer;
 }
 
 @media (max-width: 670px) {
@@ -57,14 +114,14 @@ body {
 }
 
 @media (min-width: 500px) {
-  #register-form {
+  #register-page {
     background: url(../../Spot-Fiend-Photos/Matt-Berger-Rhino.jpg) no-repeat center center;
     background-size: cover;
   }
 }
 
 @media (max-width: 500px) {
-  #register-form {
+  #register-page {
     background: url(../../Spot-Fiend-Photos/mobile-b&w2.jpg) no-repeat center center;
     background-size: cover;
   }

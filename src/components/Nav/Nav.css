@@ -41,6 +41,9 @@ body {
   top: 0;
   left: 0;
   z-index: 9999;
+  color: #ffcc00;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: 'Sedgwick Ave Display', cursive;
 }
 
 #header .title-link {
@@ -51,9 +54,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
   width: 100px;
 }
@@ -63,7 +66,7 @@ body {
   font-family: 'skateandfontimport';
   text-align: center;
   color: #ffcc00;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 #header .menu li {
@@ -87,7 +90,7 @@ body {
 }
 
 .nav-item:hover, .drop-item:hover {
-  color: #ffcc00;
+  color: white;
 }
 
 .drop-down, .drop-down-open, .drop-down-close {

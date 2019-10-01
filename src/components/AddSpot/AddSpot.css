@@ -57,6 +57,11 @@ body {
   height: 390px;
 }
 
+#post-spot-page #add-spot-form .add-photo {
+  height: 7em;
+  width: 11em;
+}
+
 #post-spot-page #add-spot-form .new-spot-input {
   height: 40px;
 }
@@ -70,12 +75,13 @@ body {
 }
 
 .submit-btn {
-  background-color: #3f3f3f;
+  background-color: transparent;
+  border-style: none;
   color: #ffcc00;
-  border-color: #ffcc00;
-  border-radius: 40px;
-  font-size: 15px;
+  font-size: 20px;
+  font-family: 'Sedgwick Ave Display', cursive;
   height: 45px;
+  margin-top: 10px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;

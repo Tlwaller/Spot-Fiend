@@ -11,7 +11,7 @@ function Map(props) {
         <div>
             <GoogleMap 
             defaultZoom={10}
-            defaultCenter={{lat: 32.776665, lng: -96.796989}}
+            defaultCenter={props.userLocation}
             defaultOptions={{styles: mapStyles}}
             >
                 {props.spots.map(spot => {
@@ -29,6 +29,9 @@ function Map(props) {
                     }}
                     />
                 })}
+
+                <Marker position={props.userLocation} icon={{url: 'http://www.clker.com/cliparts/2/2/f/d/1207431991683287184skate%20boarding%20black.svg.hi.png', 
+                scaledSize: new window.google.maps.Size(25, 25)}} />
 
                 {selectedSpot && (
                     <InfoWindow 

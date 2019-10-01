@@ -1,17 +1,29 @@
 @import '../../../main.scss';
 
-#register-form {
+#register-page {
     padding-top: 105px;
     padding-bottom: 50vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-
-    .register-input {
+    #register-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(48, 48, 48, 0.664);
+        height: 550px;
+        width: 400px;
         @extend %input-field;
-        margin-top: 5px;
-        height: 30px;
-        font-size: 15px;
+
+        .register-input {
+            margin-top: 30px;
+        }
+
+        #register {
+            @include big-button;
+        }
     }
 }
 
@@ -29,14 +41,14 @@
 
 //background
 @media(min-width: 500px) {
-    #register-form{
+    #register-page{
         background: url(../../Spot-Fiend-Photos/Matt-Berger-Rhino.jpg) no-repeat center center; 
         background-size: cover;
         }
 }
 
 @media(max-width: 500px) {
-    #register-form {
+    #register-page {
         background: url(../../Spot-Fiend-Photos/mobile-b&w2.jpg) no-repeat center center;
         background-size: cover;
     }

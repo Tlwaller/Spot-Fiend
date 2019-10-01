@@ -46,16 +46,27 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #guest-landing .buttons-container button {
-  background-color: #3f3f3f;
+  background-color: transparent;
+  border-style: none;
   color: #ffcc00;
-  border-color: #ffcc00;
-  border-radius: 40px;
-  font-size: 15px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 30px;
+  font-family: 'Sedgwick Ave Display', cursive;
+  cursor: pointer;
   width: 147px;
   height: 50px;
+  cursor: pointer;
+}
+
+#guest-landing .buttons-container button:hover {
+  color: white;
 }
 
 @media (max-width: 470px) {
