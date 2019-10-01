@@ -17,7 +17,7 @@ class SpotList extends Component {
                         <h5>{post.latitude}</h5>
                         <h5>{post.longitude}</h5>
                     </div>
-                    <img className='post-img' src={post.url}/> 
+                    <img className='post-img' src={post.url} alt=''/> 
                 </div>
             )
         })

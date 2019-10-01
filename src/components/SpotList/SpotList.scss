@@ -16,7 +16,8 @@
     .post-container {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        height: auto;
         background-color: color(primary);
         border-style: ridge;
         border-color: color(accent);
@@ -29,14 +30,14 @@
             display: flex;
             flex-direction: column;
             justify-self: flex-start;
-            height: 300px;
-            height: 200px;
+            height: auto;
         }
 
         .post-img {
             height: 200px;
             width: 30vw;
             object-fit: contain;
+            border-radius: 15px;
         }
     }
 }
@@ -47,14 +48,6 @@
 
         .post-container {
             width: 57vw;
-
-            // .post {
-            //     height: 25vh;
-            // }
-
-            // .post-img {
-            //     max-width: 70%;
-            // }
         }
     }
 }
@@ -65,13 +58,6 @@
 
         .post-container {
             width: 80vw;
-
-            // .post {
-            //     height: 20vh;
-            // }
-            // .post-img {
-            //     max-width: 50%;
-            // }
         }
     }
 }

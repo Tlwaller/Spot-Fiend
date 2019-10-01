@@ -142,7 +142,22 @@ h2 {
     width: 80vw;
   }
   .my-posts-container .my-post {
-    width: 75vw;
+    width: 78vw;
+  }
+  .my-post {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 800px) {
+  .my-posts-container {
+    width: 70vw;
+  }
+  .my-posts-container .my-post {
+    width: 65vw;
   }
   .my-post {
     -webkit-box-orient: vertical;

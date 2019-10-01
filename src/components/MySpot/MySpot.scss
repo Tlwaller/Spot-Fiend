@@ -87,7 +87,19 @@ h2 {
     .my-posts-container {
         width: 80vw;
         .my-post {
-            width: 75vw;
+            width: 78vw;
+        }
+    }
+    .my-post {
+        flex-direction: column;
+    }
+}
+
+@media(min-width: 800px) {
+    .my-posts-container {
+        width: 70vw;
+        .my-post {
+            width: 65vw;
         }
     }
     .my-post {

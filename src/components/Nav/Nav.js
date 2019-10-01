@@ -4,6 +4,7 @@ import {HashRouter, Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {getSession, logoutUser} from '../../ducks/reducers/userReducer';
 import {withRouter} from 'react-router-dom';
+import logo from './logo.svg';
 
 class Nav extends Component{
     constructor() {
@@ -35,9 +36,13 @@ class Nav extends Component{
         return (
             <>
                 <nav id='header'>
+                
                     <HashRouter>
                         <Link className='title-link' to='/home'>
-                            <h1 id='title'>SPOT FIEND</h1>
+                            <h1 id='title'>SF</h1>
+                            {/* <h1 id='title'>S</h1>
+                            <img src={logo.svg} height='30px' width='30px'/>
+                            <h1 id='title'>F</h1> */}
                         </Link>
                         <ul className='menu'>
                             <li><Link to='/home' className='nav-item'>HOME</Link></li>
