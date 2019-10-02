@@ -7,31 +7,40 @@
     background: url(../../Spot-Fiend-Photos/IMG_2221.jpg) no-repeat center center; 
     background-size: cover;
     height: 100vh;
+    color: color(accent);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
     #add-spot-form{
+        @extend %input-field;
         display: flex;
         z-index: 1;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        height: 390px; 
+        height: 760px; 
+
+        .new-spot-input {
+            margin-top: 70px;
+        }
 
         .add-photo {
             height: 7em;
             width: 11em;
+            cursor: pointer;
+            z-index: -9999;
         }
             
-        .new-spot-input {
-            @extend %input-field;
-            height: 40px;
-        }
         .desc-input {
             @extend %input-field;
-            height: 200px;
-            width: 40vw;
-            border-radius: 10px;
+            height: 400px;
+            border-style: inset;
+            border-width: 3px;
+            border-radius: 5px;
+            border-color: color(accent);
             vertical-align: 1;
             text-align: left;
+            background-color: color(primary);
+            color: whitesmoke;
         }
     }
 }
@@ -49,6 +58,7 @@
         background: url(../../Spot-Fiend-Photos/street-city-urban-bw-Canada-Vancouver-946974-wallhere.com.jpg)no-repeat center center;
         background-size: cover;
         background-position-x:60%;
+        padding-top: 50px;
     }
 
     .new-spot-input, .submit-btn  {
@@ -70,9 +80,11 @@
         top: 70px;
     }
 
+    .desc-input {
+        width: 300px;
+    }
+
     .new-spot-input, .submit-btn {
         width: 50vw;
     }
-
-    
 }

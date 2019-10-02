@@ -3,12 +3,12 @@ body {
 }
 
 .back-btn {
-  background-color: #3f3f3f;
+  background-color: transparent;
+  border-style: none;
   color: #ffcc00;
-  border-color: #ffcc00;
-  border-radius: 15px;
-  width: 20vw;
-  font-size: 15px;
+  font-size: 20px;
+  font-family: 'Sedgwick Ave Display', cursive;
+  cursor: pointer;
   width: 70px;
   position: absolute;
   top: 70px;
@@ -34,6 +34,14 @@ body {
   height: 100vh;
 }
 
+#my-spots-page h1 {
+  padding-top: 10px;
+  color: #ffcc00;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 30px;
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+
 #my-spots-page .my-posts-container {
   background-color: rgba(28, 28, 28, 0.705);
   display: -webkit-box;
@@ -57,6 +65,9 @@ body {
   #my-spots-page {
     background: url(../../Spot-Fiend-Photos/rolling.jpg) no-repeat center center;
     background-size: cover;
+  }
+  #my-spots-page .my-posts-container {
+    width: 68vw;
   }
 }
 

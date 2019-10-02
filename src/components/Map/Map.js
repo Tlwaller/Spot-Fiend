@@ -10,7 +10,7 @@ function Map(props) {
     return (
         <div>
             <GoogleMap 
-            defaultZoom={10}
+            defaultZoom={9}
             defaultCenter={props.userLocation}
             defaultOptions={{styles: mapStyles}}
             >

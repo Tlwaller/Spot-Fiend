@@ -18,12 +18,12 @@ $colors: (
     }
 
 @mixin smol-button {
-    background-color: color(primary);
+    background-color: transparent;
+    border-style: none;
     color: color(accent);
-    border-color: color(accent);
-    border-radius: 15px;
-    width: 20vw;
-    font-size: 15px;
+    font-size: 20px;
+    font-family: 'Sedgwick Ave Display', cursive;
+    cursor: pointer;
     }
 
 body { 
@@ -43,6 +43,7 @@ body {
         height: 40px;  
         font-size: 30px;
         font-family: 'Sedgwick Ave Display', cursive;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
         background-color: transparent;
         border: none;   
         border-top: 3px solid color(accent);

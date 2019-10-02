@@ -8,6 +8,14 @@
     background: 17% url(../../Spot-Fiend-Photos/p2_1.jpg) ;
     background-size: cover;
     height: 100vh;
+
+    h1 {
+        padding-top: 10px;
+        color: color(accent);
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-size: 30px;
+        font-family: 'Sedgwick Ave Display', cursive;
+    }
     
     .my-posts-container {
         background-color: hsla(0, 0%, 11%, 0.705);
@@ -27,6 +35,10 @@
     #my-spots-page {
         background: url(../../Spot-Fiend-Photos/rolling.jpg) no-repeat center center;
         background-size: cover;
+
+        .my-posts-container {
+            width: 68vw;
+        }
     }
 }
 
@@ -35,17 +47,4 @@
         background: url(../../Spot-Fiend-Photos/mobile-pipes.jpg) no-repeat center center;
         background-size: cover;
     }
-}
-
-// @media(min-width: 630px) {
-//     .my-posts-container {
-//         width: 48vw;
-//         .my-post {
-//             width: 45vw;
-//         }
-//     }
-// }
-
-@media(max-width: 630px) {
-    
 }

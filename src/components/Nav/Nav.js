@@ -4,7 +4,7 @@ import {HashRouter, Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {getSession, logoutUser} from '../../ducks/reducers/userReducer';
 import {withRouter} from 'react-router-dom';
-import logo from './logo.svg';
+import hamburger from './hbgr.png';
 
 class Nav extends Component{
     constructor() {
@@ -51,8 +51,8 @@ class Nav extends Component{
                     
                     <img
                     className='hbgr hidden-by-default' onClick={this.toggle}
-                    src='https://png2.cleanpng.com/sh/a1df4078d84a2f39e9ae7073d5dc8eb0/L0KzQYm3VsA2N6NBhJH0aYP2gLBuTfNwdaF6jNd7LXnmf7B6Tf1mdqYyeud9dHBxPbX2lB5td5JpRed8ZYKwebB7hgJnaZRqRd9uboWwgMTrTcVjOWc2S6YCM3azQIm5TsE0O2MAS6o6MUW1SIKAU8M5O2M6UKM3cH7q/kisspng-computer-icons-menu-button-download-user-interface-menu-psd-5b1613473f0082.1332938115281733832581.png'
-                    alt='menu'/>
+                    src={hamburger}
+                    />
                 </nav>
 
                     <HashRouter>

@@ -69,6 +69,10 @@ body {
   font-size: 2.5em;
 }
 
+#header .menu {
+  z-index: 9998;
+}
+
 #header .menu li {
   list-style-type: none;
   margin-right: 2vw;
