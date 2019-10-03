@@ -4,28 +4,34 @@ import Nav from '../Nav/Nav';
 import {connect} from 'react-redux';
 import {Redirect} from 'react-router-dom';
 import {addPost} from '../../ducks/reducers/postsReducer'
-import {Link} from 'react-router-dom';
+import axios from 'axios';
 
 class AddSpot extends Component {
     constructor() {
         super();
         this.state = {
             title: '',
-            long: 0,
             latitude: 0,
             longitude: 0,
+            address: '',
             description: '',
             sent: 0,
             url: ''
         }
     }
 
-    handleSubmit = e => {
+    handleSubmit = async(e) => {
         e.preventDefault();
-        const {title, latitude, longitude, description, url} = this.state;
         const {addPost} = this.props;
-
-        addPost({title, latitude, longitude, description, url}).then(this.setState({sent: 1}));
+        await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${this.state.address},+CA&key=AIzaSyBwT3Ed-0Ekc7tkjNUKFWEdsb8C3qek8_4`)
+        .then((response) => this.setState(
+            {
+                latitude: (response.data.results[0].geometry.location.lat),
+                longitude: (response.data.results[0].geometry.location.lng)
+            }
+        ));
+        const {title, address, latitude, longitude, description, url} = this.state;
+        addPost({title, address, latitude, longitude, description, url}).then(this.setState({sent: 1}));
     }
 
     handleInput = e => {
@@ -42,7 +48,7 @@ class AddSpot extends Component {
 
     render() {
         if (this.state.sent === 1) {
-            return <Redirect to='/my-spots'/>
+            return <Redirect to='/home'/>
         }
 
         const widget = window.cloudinary.createUploadWidget(
@@ -64,7 +70,11 @@ class AddSpot extends Component {
                         <input id='input-a' className='new-spot-input' type='text' name='title' onChange={this.handleInput}/>
                         <label for='input-a'>{this.state.title ? '' : 'Title'}</label>
                         </div>
-                        <div class='input'>
+                        <div className='input'>
+                        <input id='input-b' className='new-spot-input' type='text' name='address' onChange={this.handleInput}/>
+                        <label for='input-b'>{this.state.address ? '' : 'Adress'}</label>
+                        </div>
+                        {/* <div class='input'>
                         <input id='input-b' className='new-spot-input' type='text' name='latitude' onChange={this.handleInput}/>
                         <label for='input-b'>{this.state.latitude ? '' : 'Latitude'}</label>
                         </div>
@@ -72,9 +82,7 @@ class AddSpot extends Component {
                         <input id='input-c' className='new-spot-input' type='text' name='longitude' onChange={this.handleInput}/>
                         <label for='input-c'>{this.state.longitude ? '' : 'Longitude'}</label>
                         </div>
-                        <h4>
-                            Check out <a href="https://www.latlong.net" target="_blank">latlong.net</a> for coordinates
-                        </h4>
+                        */}
                         <textarea className='desc-input' type='text' name='description' placeholder='Description' onChange={this.handleInput}/>
                         <button className='submit-btn' onClick={this.handleSubmit}>Send it!</button>
                     </form>

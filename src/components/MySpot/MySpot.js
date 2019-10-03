@@ -2,6 +2,7 @@ import {connect} from 'react-redux';
 import {updateUserPosts, deletePost, editPost} from '../../ducks/reducers/postsReducer'
 import React, { Component } from 'react'
 import './MySpot.css';
+import axios from 'axios';
 
 class MySpot extends Component {
     constructor() {
@@ -9,6 +10,8 @@ class MySpot extends Component {
         this.state = {
                 title: '',
                 address: '',
+                latitude: 0,
+                longitude: 0,
                 description: '',
                 editing: false
         }
@@ -26,10 +29,23 @@ class MySpot extends Component {
         this.props.deletePost(spot_id);
     }
 
-    handleEdit = (spot_id) => {
-        const {title, address, description} = this.state;
-        console.log("myspotlist state: " + spot_id, title, address, description)
-        this.props.editPost({spot_id, title, address, description})
+    handleEdit = async(spot_id) => {
+        var property;
+        for (property in this.state) {
+            if(this.state[property] === '') {
+                continue;
+            }
+        }
+        await console.log(this.state.address);
+        axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${this.state.address},+CA&key=AIzaSyBwT3Ed-0Ekc7tkjNUKFWEdsb8C3qek8_4`)
+        .then((response) => this.setState(
+            {
+                latitude: (response.data.results[0].geometry.location.lat),
+                longitude: (response.data.results[0].geometry.location.lng)
+            }
+        ));
+        const {title, address, latitude, longitude, description} = this.state;
+        this.props.editPost({spot_id, title, address, latitude, longitude, description});
     }
 
     toggleEdit = () => {
@@ -52,8 +68,7 @@ class MySpot extends Component {
                     <div className='my-post-item-container'>
                         <h2 className='my-post-item'>{post.title}</h2>
                         <p className='my-post-item'>{post.description}</p>
-                        <h5 className='my-post-item'>{post.latitude}</h5>
-                        <h5 className='my-post-item'>{post.longitude}</h5>
+                        <h5 className='my-post-item'>{post.address}</h5>
                         <div className='mypost-btn-container'>
                             <img src='https://www.shareicon.net/data/128x128/2016/09/05/825547_document_512x512.png'
                             onClick={this.toggleEdit}
@@ -80,17 +95,11 @@ class MySpot extends Component {
                         <input
                         className='edit-post-input'
                             type='text'
-                            placeholder='edit latitude'
-                            name='latitude'
+                            placeholder='edit address'
+                            name='address'
                             onChange={this.handleInput}
                         />
-                        <input
-                        className='edit-post-input'
-                            type='text'
-                            placeholder='edit longitude'
-                            name='longitude'
-                            onChange={this.handleInput}
-                        />
+
                         <input
                         className='edit-post-input'
                             type='text'

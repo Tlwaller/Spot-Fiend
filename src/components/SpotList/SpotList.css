@@ -3,12 +3,12 @@ body {
 }
 
 .back-btn {
-  background-color: #3f3f3f;
+  background-color: transparent;
+  border-style: none;
   color: #ffcc00;
-  border-color: #ffcc00;
-  border-radius: 15px;
-  width: 20vw;
-  font-size: 15px;
+  font-size: 20px;
+  font-family: 'Sedgwick Ave Display', cursive;
+  cursor: pointer;
   width: 70px;
   position: absolute;
   top: 70px;
@@ -17,7 +17,6 @@ body {
 
 #spot-list {
   margin-top: 10px;
-  background-color: rgba(28, 28, 28, 0.705);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,31 +28,39 @@ body {
       -ms-flex-align: center;
           align-items: center;
   overflow: auto;
-  border-style: inset;
-  border-radius: 20px;
-  border-color: #ffcc00;
   text-align: left;
   height: 500px;
+  width: auto;
+  border-bottom-style: solid;
+  border-color: #ffcc00;
+  border-bottom-width: 7px;
+  border-top-style: solid;
+  border-top-width: 7px;
+  background-color: rgba(58, 58, 58, 0.5);
 }
 
 #spot-list .post-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  margin-left: 15px;
+  margin-right: 15px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: auto;
+  width: auto;
   background-color: #3f3f3f;
   border-style: ridge;
   border-color: #ffcc00;
   border-radius: 20px;
   margin-top: 13px;
   color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: right;
 }
 
 #spot-list .post-container .post {
@@ -77,20 +84,18 @@ body {
 }
 
 @media (min-width: 880px) {
-  #spot-list {
-    width: 60vw;
-  }
-  #spot-list .post-container {
-    width: 57vw;
+  .post {
+    margin-right: 10px;
   }
 }
 
 @media (max-width: 880px) {
-  #spot-list {
-    width: 90vw;
-  }
-  #spot-list .post-container {
-    width: 80vw;
+  .post-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=SpotList.css.map */

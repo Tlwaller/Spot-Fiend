@@ -11,13 +11,13 @@ class SpotList extends Component {
         const postsMapped = this.props.posts.map((post, i) => {
             return (
                 <div key={i} className='post-container'>
+                    <img className='post-img' src={post.url} alt=''/> 
                     <div  className='post'>
                         <h2>{post.title}</h2>
                         <p>{post.description}</p>
-                        <h5>{post.latitude}</h5>
-                        <h5>{post.longitude}</h5>
+                        <h5>{post.address}</h5>
                     </div>
-                    <img className='post-img' src={post.url} alt=''/> 
+                    
                 </div>
             )
         })

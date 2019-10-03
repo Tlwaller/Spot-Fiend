@@ -3,12 +3,12 @@ body {
 }
 
 .back-btn {
-  background-color: #3f3f3f;
+  background-color: transparent;
+  border-style: none;
   color: #ffcc00;
-  border-color: #ffcc00;
-  border-radius: 15px;
-  width: 20vw;
-  font-size: 15px;
+  font-size: 20px;
+  font-family: 'Sedgwick Ave Display', cursive;
+  cursor: pointer;
   width: 70px;
   position: absolute;
   top: 70px;
@@ -99,7 +99,6 @@ body {
 }
 
 #post-spot-page #add-spot-form .desc-input {
-  height: 400px;
   border-style: inset;
   border-width: 3px;
   border-radius: 5px;
@@ -132,6 +131,10 @@ body {
     background-size: cover;
     background-position-x: 60%;
     padding-top: 50px;
+  }
+  .desc-input {
+    width: 30vw;
+    height: 150px;
   }
   .new-spot-input, .submit-btn {
     width: 30vw;

@@ -61,16 +61,6 @@ body {
   border-color: #ffcc00;
 }
 
-@media (min-width: 830px) {
-  #my-spots-page {
-    background: url(../../Spot-Fiend-Photos/rolling.jpg) no-repeat center center;
-    background-size: cover;
-  }
-  #my-spots-page .my-posts-container {
-    width: 68vw;
-  }
-}
-
 @media (max-width: 830px) {
   #my-spots-page {
     background: url(../../Spot-Fiend-Photos/mobile-pipes.jpg) no-repeat center center;

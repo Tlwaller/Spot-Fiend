@@ -168,7 +168,17 @@ h2 {
   }
 }
 
-@media (max-width: 500px) {
+@media (min-width: 870px) {
+  .my-posts-container {
+    width: 70vw;
+  }
+  .my-posts-container .my-post {
+    width: 65vw;
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 870px) {
   .my-posts-container {
     width: 80vw;
   }
@@ -183,16 +193,6 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-
-@media (min-width: 800px) {
-  .my-posts-container {
-    width: 70vw;
-  }
-  .my-posts-container .my-post {
-    width: 65vw;
-    max-height: 400px;
   }
 }
 /*# sourceMappingURL=MySpot.css.map */

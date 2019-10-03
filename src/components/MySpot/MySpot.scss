@@ -120,7 +120,17 @@ h2 {
     
 }
 
-@media(max-width: 500px) {
+@media(min-width: 870px) {
+    .my-posts-container {
+        width: 70vw;
+        .my-post {
+            width: 65vw;
+            max-height: 400px;
+        }
+    }
+}
+
+@media(max-width: 870px) {
     .my-posts-container {
         width: 80vw;
         .my-post-container {
@@ -133,15 +143,5 @@ h2 {
     }
     .my-post {
         flex-direction: column;
-    }
-}
-
-@media(min-width: 800px) {
-    .my-posts-container {
-        width: 70vw;
-        .my-post {
-            width: 65vw;
-            max-height: 400px;
-        }
     }
 }

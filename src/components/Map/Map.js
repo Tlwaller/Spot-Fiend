@@ -3,6 +3,7 @@ import {GoogleMap, withScriptjs, withGoogleMap, Marker, InfoWindow} from 'react-
 import {updatePosts} from '../../ducks/reducers/postsReducer';
 import {connect} from 'react-redux';
 import mapStyles from './MapStyles';
+import axios from 'axios';
 
 function Map(props) {
     const [selectedSpot, setSelectedSpot] = useState(null);
@@ -11,7 +12,7 @@ function Map(props) {
         <div>
             <GoogleMap 
             defaultZoom={9}
-            defaultCenter={props.userLocation}
+            defaultCenter={{lat: 32.776665, lng: -96.796989}}
             defaultOptions={{styles: mapStyles}}
             >
                 {props.spots.map(spot => {
