@@ -84,12 +84,12 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: rgba(48, 48, 48, 0.664);
-  height: 550px;
+  height: 640px;
   width: 400px;
 }
 
 #register-page #register-form .register-input {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 #register-page #register-form #register {

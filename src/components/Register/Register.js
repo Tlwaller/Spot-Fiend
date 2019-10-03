@@ -61,7 +61,7 @@ class Register extends Component {
                     <input 
                     id='input-b'
                     className='register-input'
-                    type='text' 
+                    type='password' 
                     name='password'
                     onChange={this.handleInput}/>
                     <label for='input-b'>{this.state.password ? '' : 'Password'}</label>
@@ -70,7 +70,7 @@ class Register extends Component {
                     <input
                     id='input-c'
                     className='register-input'
-                    type='text'
+                    type='password'
                     name='password2'
                     onChange={this.handleInput}/>
                     <label for='input-c'>{this.state.password2 ? '' : 'Password Again'}</label>

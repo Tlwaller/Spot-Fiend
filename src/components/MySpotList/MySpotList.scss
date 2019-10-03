@@ -28,6 +28,18 @@
         border-radius: 20px;
         border-color: color(accent);
     }
+
+    .add-spot {
+        width: 147px;
+        height: 50px;
+        cursor: pointer;
+        background-color: color(accent);
+        border-style: none;
+        color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-size: 30px;
+        font-family: 'Sedgwick Ave Display', cursive;
+    }
 }
 
 //background

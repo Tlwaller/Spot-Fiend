@@ -4,6 +4,7 @@ import Nav from '../Nav/Nav';
 import MySpot from '../MySpot/MySpot';
 import {connect} from 'react-redux';
 import {updateUserPosts} from '../../ducks/reducers/postsReducer'
+import {Link} from 'react-router-dom';
 
 class MySpotList extends Component {
 
@@ -23,6 +24,9 @@ class MySpotList extends Component {
                 <h1>My Spots</h1>
                 <div className='my-posts-container'>
                     <h2>No spots to show, get out there and find some!</h2>
+                    <Link to='/add-spot'>
+                        <button className='add-spot'>New Spot</button>
+                    </Link>
                 </div>
             </div>
             )

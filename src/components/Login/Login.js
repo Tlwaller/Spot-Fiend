@@ -47,7 +47,7 @@ class Login extends Component {
                     <div class='input'>
                     <input id='input-b'
                     className='login-input'
-                    type='text' 
+                    type='password' 
                     name='password'
                     onChange={this.handleInput}/>
                     <label for='input-b'>{this.state.password ? '' : 'Password'}</label>

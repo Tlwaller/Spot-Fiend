@@ -61,6 +61,18 @@ body {
   border-color: #ffcc00;
 }
 
+#my-spots-page .add-spot {
+  width: 147px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #ffcc00;
+  border-style: none;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 30px;
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+
 @media (max-width: 830px) {
   #my-spots-page {
     background: url(../../Spot-Fiend-Photos/mobile-pipes.jpg) no-repeat center center;
