@@ -1,1 +1,1 @@
-[image]('./src/Spot-Fiend-Photos/browder_bank.jpg)
+[image]('./src/Spot-Fiend-Photos/handrail_on_pacific.jpg')
