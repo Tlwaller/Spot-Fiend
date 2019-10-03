@@ -31,11 +31,7 @@ class MySpot extends Component {
 
     handleEdit = async(spot_id) => {
         var property;
-        for (property in this.state) {
-            if(this.state[property] === '') {
-                continue;
-            }
-        }
+
         await console.log(this.state.address);
         axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${this.state.address},+CA&key=AIzaSyBwT3Ed-0Ekc7tkjNUKFWEdsb8C3qek8_4`)
         .then((response) => this.setState(

@@ -52,7 +52,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: auto;
-  width: auto;
   background-color: #3f3f3f;
   border-style: ridge;
   border-color: #ffcc00;
@@ -60,7 +59,6 @@ body {
   margin-top: 13px;
   color: white;
   font-family: 'Montserrat', sans-serif;
-  text-align: right;
 }
 
 #spot-list .post-container .post {
@@ -77,15 +75,17 @@ body {
 
 #spot-list .post-container .post-img {
   height: 200px;
-  width: 30vw;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: auto;
   border-radius: 15px;
 }
 
 @media (min-width: 880px) {
-  .post {
+  .post-container {
+    width: 60vw;
+  }
+  .post-container .post {
     margin-right: 10px;
+    text-align: right;
   }
 }
 
@@ -96,6 +96,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    width: 70vw;
   }
 }
 /*# sourceMappingURL=SpotList.css.map */

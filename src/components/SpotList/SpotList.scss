@@ -38,7 +38,6 @@
         justify-content: space-between;
         align-items: center;
         height: auto;
-        width: auto;
         background-color: color(primary);
         border-style: ridge;
         border-color: color(accent);
@@ -46,7 +45,6 @@
         margin-top: 13px;
         color: white;
         font-family: 'Montserrat', sans-serif;
-        text-align: right;
 
         .post {
             display: flex;
@@ -57,22 +55,28 @@
 
         .post-img {
             height: 200px;
-            width: 30vw;
-            object-fit: contain;
+            width: auto;
+            // object-fit: contain;
             border-radius: 15px;
         }
     }
 }
 
 @media(min-width: 880px) {
-    .post {
-        margin-right: 10px;
+    .post-container {
+        width: 60vw;
+        .post {
+            margin-right: 10px;
+            text-align: right;
+        }
     }
+    
 }
 
 @media(max-width: 880px) {
     .post-container {
         flex-direction: column;
         text-align: center;
+        width: 70vw;
     }
 }
