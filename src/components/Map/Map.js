@@ -45,8 +45,9 @@ function Map(props) {
                     }}
                     >
                         <div>
-                        <h3>{selectedSpot.title}</h3>
-                        <p>{selectedSpot.description}</p>
+                            <img src={selectedSpot.url} style={{height: '100px'}}/>
+                            <h3>{selectedSpot.title}</h3>
+                            <p>{selectedSpot.description}</p>
                         </div>
                     </InfoWindow>
                 )}

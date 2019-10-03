@@ -3,12 +3,12 @@ body {
 }
 
 .back-btn {
-  background-color: #3f3f3f;
+  background-color: transparent;
+  border-style: none;
   color: #ffcc00;
-  border-color: #ffcc00;
-  border-radius: 15px;
-  width: 20vw;
-  font-size: 15px;
+  font-size: 20px;
+  font-family: 'Sedgwick Ave Display', cursive;
+  cursor: pointer;
   width: 70px;
   position: absolute;
   top: 70px;
@@ -35,10 +35,7 @@ body {
 }
 
 #guest-landing .heading {
-  text-align: center;
-  font-size: 2.5em;
   font-family: 'Montserrat', sans-serif;
-  padding-top: 50px;
   color: white;
 }
 
@@ -46,23 +43,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 #guest-landing .buttons-container button {
-  background-color: transparent;
-  border-style: none;
-  color: #ffcc00;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-size: 30px;
-  font-family: 'Sedgwick Ave Display', cursive;
-  cursor: pointer;
   width: 147px;
   height: 50px;
   cursor: pointer;
+  background-color: #ffcc00;
+  border-style: none;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 30px;
+  font-family: 'Sedgwick Ave Display', cursive;
 }
 
 #guest-landing .buttons-container button:hover {
@@ -70,14 +62,19 @@ body {
 }
 
 @media (max-width: 470px) {
+  .header {
+    text-align: center;
+    font-size: 79px;
+  }
   .buttons-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .buttons-container button {
-    width: 60vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 150px;
   }
 }
 
@@ -89,10 +86,7 @@ body {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 40vw;
-  }
-  .buttons-container button {
-    width: 40vw;
+    width: 450px;
   }
 }
 
@@ -102,12 +96,25 @@ body {
     background-size: cover;
     background-position-y: 0%;
   }
+  #guest-landing .heading {
+    margin-top: 50px;
+    width: 650px;
+    text-align: left;
+    font-size: 150px;
+  }
 }
 
 @media (max-width: 1050px) {
   #guest-landing {
     background: url(../../Spot-Fiend-Photos/mobile-red.jpg) no-repeat center center;
     background-size: cover;
+  }
+  #guest-landing .heading {
+    margin-top: 150px;
+    height: 300px;
+    text-align: center;
+    font-size: 79px;
+    text-shadow: -.5px 0 black, 0 .5px black, .5px 0 black, 0 -.5px black;
   }
 }
 /*# sourceMappingURL=GuestLanding.css.map */

@@ -76,6 +76,7 @@ body {
 #spot-list .post-container .post-img {
   height: 200px;
   width: auto;
+  max-width: 100%;
   border-radius: 15px;
 }
 

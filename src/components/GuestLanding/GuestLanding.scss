@@ -10,21 +10,22 @@
     height: 100vh;
 
     .heading {
-        text-align: center;
-        font-size: 2.5em;
         font-family: 'Montserrat', sans-serif;
-        padding-top: 50px;
-        color: white;
+        color: rgb(255, 255, 255);
     }
 
     .buttons-container {
         display: flex;
-        flex-direction: row;
         button {
-            @include big-button;
             width: 147px;
             height: 50px;
             cursor: pointer;
+            background-color: color(accent);
+            border-style: none;
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            font-size: 30px;
+            font-family: 'Sedgwick Ave Display', cursive;
         }
 
         button:hover {
@@ -36,25 +37,23 @@
 
 //button size
 @media(max-width: 470px) {
+    .header {
+        text-align: center;
+        font-size: 79px;
+    }
+
     .buttons-container {
         flex-direction: column;
-        
-        button {
-            width: 60vw;
-        };
+        justify-content: space-between;
+        height: 150px;
     };
-    
 }
 
 @media(min-width: 470px) {
     .buttons-container {
         flex-direction: row;
         justify-content: space-around;
-        width: 40vw;
-
-        button {
-            width: 40vw;
-        };
+        width: 450px;
     };
 }
 
@@ -64,6 +63,13 @@
         background: url(../../Spot-Fiend-Photos/wallpaper_skb1012_02.jpg) no-repeat center center;
         background-size: cover;
         background-position-y: 0%;
+
+        .heading {
+            margin-top: 50px;
+            width: 650px;
+            text-align: left;
+            font-size: 150px;
+        }
     }
 }
 
@@ -71,5 +77,13 @@
     #guest-landing {
         background: url(../../Spot-Fiend-Photos/mobile-red.jpg) no-repeat center center;
         background-size: cover;
+
+        .heading {
+            margin-top: 150px;
+            height: 300px;
+            text-align: center;
+            font-size: 79px;
+            text-shadow: -.5px 0 black, 0 .5px black, .5px 0 black, 0 -.5px black;
+        }
     }   
 }

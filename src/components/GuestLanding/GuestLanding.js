@@ -11,13 +11,14 @@ export default class GuestLanding extends Component {
         return (
             <div id='guest-landing'>
                 <GuestNav/>
-                {/* <img className='mobileBG' src={mobileBG} alt='mobileBG'/> */}
-                <h1 className='heading'>Welcome to Spot Fiend</h1>
+                <div id='heading-container'>
+                    <h1 className='heading'>Welcome to Spot Fiend</h1>
+                </div>
                 <div className='buttons-container'>
                     <Link className='buttons' to='/login'>
                         <button>Log In</button>
                     </Link>
-                    <Link to='/register'>
+                    <Link className='buttons' to='/register'>
                         <button>Register</button>
                     </Link>
                 </div>

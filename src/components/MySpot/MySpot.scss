@@ -60,13 +60,6 @@
     }
 }
 
-.my-spot-photo {
-    // height: auto;
-    // width: auto;
-    // max-width: 250px;
-    // max-height: 200px;
-}
-
 h2 {
     color: white;
 }
@@ -122,10 +115,12 @@ h2 {
 
 @media(min-width: 870px) {
     .my-posts-container {
-        width: 70vw;
+        width: auto;
         .my-post {
-            width: 65vw;
+            width: 800px;
             max-height: 400px;
+            margin-right: 10px;
+            margin-left: 10px;
         }
     }
 }

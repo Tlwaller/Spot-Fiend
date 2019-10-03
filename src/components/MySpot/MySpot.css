@@ -170,11 +170,13 @@ h2 {
 
 @media (min-width: 870px) {
   .my-posts-container {
-    width: 70vw;
+    width: auto;
   }
   .my-posts-container .my-post {
-    width: 65vw;
+    width: 800px;
     max-height: 400px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 
