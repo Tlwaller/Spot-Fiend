@@ -25,14 +25,13 @@ function Map(props) {
                         lng: (longitude)
                     }}
                     onClick={() => {
-                        console.log(spot)
                         setSelectedSpot(spot);
                     }}
                     />
                 })}
 
                 <Marker position={props.userLocation} icon={{url: 'http://www.clker.com/cliparts/2/2/f/d/1207431991683287184skate%20boarding%20black.svg.hi.png', 
-                scaledSize: new window.google.maps.Size(25, 25)}} />
+                scaledSize: new window.google.maps.Size(30, 30)}} />
 
                 {selectedSpot && (
                     <InfoWindow 
@@ -48,6 +47,7 @@ function Map(props) {
                             <img src={selectedSpot.url} style={{height: '100px'}}/>
                             <h3>{selectedSpot.title}</h3>
                             <p>{selectedSpot.description}</p>
+                            <h6>{selectedSpot.address}</h6>
                         </div>
                     </InfoWindow>
                 )}

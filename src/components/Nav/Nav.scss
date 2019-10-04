@@ -19,7 +19,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 9998;
 
     color: color(accent);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -43,7 +43,7 @@
         }
     
     .menu {
-        z-index: 9998;
+        z-index: 9999;
     }
 
     .menu li {

@@ -35,7 +35,6 @@ class Login extends Component {
             <div id='login-page'>
                 <GuestNav/>
                 <form id='login-form'>
-                    
                     <div class='input'>
                     <input id='input-a'
                     className='login-input'

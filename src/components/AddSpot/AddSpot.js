@@ -29,7 +29,7 @@ class AddSpot extends Component {
                 latitude: (response.data.results[0].geometry.location.lat),
                 longitude: (response.data.results[0].geometry.location.lng)
             }
-        ));
+        )).catch((err) => console.log(err));
         const {title, address, latitude, longitude, description, url} = this.state;
         addPost({title, address, latitude, longitude, description, url}).then(this.setState({sent: 1}));
     }
