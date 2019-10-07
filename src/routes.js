@@ -6,12 +6,9 @@ import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import AddSpot from './components/AddSpot/AddSpot';
 import MySpot from './components/MySpot/MySpot';
-import Spot from './components/Spot/Spot';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import MySpotList from './components/MySpotList/MySpotList';
-// import Test from './components/Test/Test';
-
 
 export default (
     <Router>
@@ -22,11 +19,9 @@ export default (
             <Route path='/register' component={Register}/>
             <Route path='/add-spot' component={AddSpot}/>
             <Route path='/my-spot' component={MySpot}/>
-            <Route path='/spot' component={Spot}/>
             <Route path='/about' component={About}/>
             <Route path='/contact' component={Contact}/>
             <Route path='/my-spots' component={MySpotList}/>
-            {/* <Route path='/test' component={Test}/> */}
         </Switch>
     </Router>
 )
