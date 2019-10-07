@@ -10,10 +10,10 @@ const ADD_POST = 'ADD_POST';
 const DELETE_POST = 'DELETE_POST';
 const EDIT_POST = 'EDIT_POST';
 
-export function updatePosts() {
+export function updatePosts(spot_id) {
     return {
         type:UPDATE_POSTS,
-        payload: axios.get(`/api/spots`)
+        payload: axios.get(`/api/spots`, spot_id)
     }
 };
 

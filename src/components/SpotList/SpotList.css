@@ -16,7 +16,7 @@ body {
 }
 
 #spot-list {
-  margin-top: 5ch;
+  margin-top: 4ch;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +29,7 @@ body {
           align-items: center;
   overflow: auto;
   text-align: left;
-  height: 500px;
+  height: 490px;
   width: auto;
   border-bottom-style: solid;
   border-color: #ffcc00;
@@ -37,6 +37,7 @@ body {
   border-top-style: solid;
   border-top-width: 7px;
   background-color: rgba(58, 58, 58, 0.5);
+  margin-bottom: 10px;
 }
 
 #spot-list .post-container {

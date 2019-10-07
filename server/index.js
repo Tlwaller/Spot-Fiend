@@ -24,7 +24,7 @@ massive(CONNECTION_STRING).then(db => {
     console.log('db connected')
 })
 
-//authorization
+//authentication
 app.get('/auth/user', authController.getUser);
 app.post('/auth/register', authController.register);
 app.post('/auth/login', authController.login);

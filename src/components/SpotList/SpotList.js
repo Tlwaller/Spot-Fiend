@@ -7,8 +7,10 @@ class SpotList extends Component {
     componentDidMount() {
         this.props.updatePosts();
     }
+
     render() {
         const postsMapped = this.props.posts.map((post, i) => {
+            console.log(post);
             return (
                 <div key={i} className='post-container'>
                     <img className='post-img' src={post.url} alt=''/> 
